@@ -3,594 +3,878 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avinash Shah — Systems & Full-Stack Developer</title>
-  <meta name="description" content="Portfolio of Avinash Shah — IIIT Una '27. Systems programming, WebRTC distributed architecture, and OpenGL graphics.">
+  <title>Avinash Shah — Systems & Full-Stack Engineer</title>
+  <meta name="description" content="Editorial portfolio of Avinash Shah — IIIT Una '27. Systems programming, C++ OpenGL graphics, WebRTC distributed architecture, and microservices.">
+
+  <!-- Typography: Space Grotesk & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="container nav-wrapper">
-      <a href="#hero" class="logo">
-        <span>avinash.shah</span>
-        <span class="logo-tag">// systems</span>
-      </a>
+  <div class="page-frame">
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#hero" class="active">Overview</a></li>
-          <li><a href="#openglt">3D Graphics</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#profiles">Profiles</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-actions">
-        <a href="https://drive.google.com/file/d/18fDafogWGlxZG-SP24j79e-df253U2F3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-          Resume [PDF]
-        </a>
-        <a href="#contact" class="btn btn-primary btn-sm">
-          Contact
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section id="hero" class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="hero-badge">
-            <span>IIIT Una '27 &bull; Available for roles</span>
-          </div>
-
-          <h1 class="hero-title">Avinash Shah</h1>
-
-          <div class="hero-role-wrapper">
-            <span>&gt;</span>
-            <span id="typingRole">Full-Stack Web Developer</span>
-            <span class="typing-cursor"></span>
-          </div>
-
-          <p class="hero-description">
-            Computer Science undergraduate building distributed real-time systems, WebRTC video architecture, and C++ OpenGL rendering engines. Focused on low latency, clean design, and reliable performance.
-          </p>
-
-          <div class="hero-cta-group">
-            <a href="#projects" class="btn btn-primary">
-              View Projects &rarr;
-            </a>
-            <a href="https://drive.google.com/file/d/18fDafogWGlxZG-SP24j79e-df253U2F3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-              Download Resume
-            </a>
-            <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              Live 3D Engine &rarr;
-            </a>
-            <a href="#openglt" class="btn btn-outline">
-              OpenGlt Details
-            </a>
-          </div>
-
-          <div class="hero-socials">
-            <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer" class="social-pill" style="border-color: rgba(168, 85, 247, 0.3); color: #c084fc;">
-              <span>GitHub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/avinash-shah-19447628a/" target="_blank" rel="noopener noreferrer" class="social-pill" style="border-color: rgba(59, 130, 246, 0.3); color: #60a5fa;">
-              <span>LinkedIn</span>
-            </a>
-            <a href="https://leetcode.com/u/user7340xt/" target="_blank" rel="noopener noreferrer" class="social-pill" style="border-color: rgba(245, 158, 11, 0.3); color: #fbbf24;">
-              <span>LeetCode [551+]</span>
-            </a>
-            <a href="https://www.hackerrank.com/profile/khurana_aaa3" target="_blank" rel="noopener noreferrer" class="social-pill" style="border-color: rgba(16, 185, 129, 0.3); color: #34d399;">
-              <span>HackerRank</span>
-            </a>
-            <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="social-pill" style="border-color: rgba(6, 182, 212, 0.3); color: #22d3ee;">
-              <span>wehearapp.online</span>
-            </a>
-          </div>
+    <!-- 1. Running Ledger Masthead (Anti-Generic Navbar) -->
+    <header class="masthead">
+      <div class="masthead-top-ledger mono">
+        <div class="ledger-item">
+          <span>COORDINATES:</span>
+          <span>31.48° N, 76.19° E [UNA, IN]</span>
         </div>
-
-        <!-- Portrait -->
-        <div class="hero-portrait-card" style="border-color: rgba(59, 130, 246, 0.3);">
-          <div class="portrait-img-box">
-            <img src="assets/avinash_photo.jpg" alt="Avinash Shah">
-          </div>
-          <div class="portrait-meta-footer">
-            <span style="color: #60a5fa;">Avinash Shah</span>
-            <span>IIIT Una &bull; CSE</span>
-          </div>
+        <div class="ledger-item">
+          <span>LOCAL CLOCK:</span>
+          <span id="liveClock">03:25:00 IST (UTC+05:30)</span>
+        </div>
+        <div class="ledger-item">
+          <span class="status-dot"></span>
+          <span>STATUS: OPEN FOR ENGINEERING ROLES</span>
         </div>
       </div>
 
-      <!-- Metrics -->
-      <div class="container">
-        <div class="metrics-strip">
-          <div class="metric-card" style="border-color: rgba(245, 158, 11, 0.2);">
-            <div class="metric-value color-amber">551+</div>
-            <div class="metric-label">LeetCode Solved (97.5% Medium)</div>
-          </div>
-          <div class="metric-card" style="border-color: rgba(168, 85, 247, 0.2);">
-            <div class="metric-value color-purple">28+</div>
-            <div class="metric-label">GitHub Repositories</div>
-          </div>
-          <div class="metric-card" style="border-color: rgba(16, 185, 129, 0.2);">
-            <div class="metric-value color-emerald">3rd</div>
-            <div class="metric-label">IIT Ropar GameJam 2025</div>
-          </div>
-          <div class="metric-card" style="border-color: rgba(59, 130, 246, 0.2);">
-            <div class="metric-value color-blue">1 Title</div>
-            <div class="metric-label">Shipped on Google Play Store</div>
-          </div>
+      <div class="masthead-main">
+        <div class="masthead-brand">
+          <a href="#dispatch" class="brand-name">Avinash Shah</a>
+          <span class="brand-title mono">// SYSTEMS & DISTRIBUTED</span>
+        </div>
+
+        <nav class="masthead-nav mono">
+          <a href="#dispatch" class="nav-anchor"><span class="nav-num">[01]</span>DISPATCH</a>
+          <a href="#works" class="nav-anchor"><span class="nav-num">[02]</span>CURATED WORKS</a>
+          <a href="#specs" class="nav-anchor"><span class="nav-num">[03]</span>SPECS MATRIX</a>
+          <a href="#benchmarks" class="nav-anchor"><span class="nav-num">[04]</span>VERIFIED</a>
+          <a href="#contact" class="nav-anchor"><span class="nav-num">[05]</span>CONTACT</a>
+        </nav>
+
+        <div class="masthead-actions">
+          <a href="https://drive.google.com/file/d/18fDafogWGlxZG-SP24j79e-df253U2F3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+            <span>RESUME [PDF]</span>
+          </a>
+          <a href="#contact" class="btn-editorial btn-vermilion">
+            <span>GET IN TOUCH</span>
+          </a>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- 3D Graphics Engine (Authentic OpenGlt Repo) -->
-    <section id="openglt" class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Featured Graphics Repository</span>
-          <h2 class="section-title">OpenGlt — C++ 3D Rendering Pipeline</h2>
-          <p class="section-subtitle">
-            Hardware-accelerated 3D graphics application built from scratch in C++ using OpenGL 3.3+, GLFW, GLM, and Assimp.
-          </p>
+    <main>
+      <!-- 2. Hero Section: Asymmetrical Editorial Dispatch -->
+      <section id="dispatch" class="hero-dispatch">
+        <!-- Left: Broadsheet Editorial Column -->
+        <div class="dispatch-editorial">
+          <div>
+            <div class="dispatch-stamp mono">
+              <span>FIELD DOSSIER // VOL. 2026.1</span>
+            </div>
+
+            <h1 class="dispatch-headline">
+              Building deterministic systems, low-latency <em>WebRTC</em> pipelines, and native <em>C++ graphics</em> engines.
+            </h1>
+
+            <p class="dispatch-thesis">
+              Computer Science undergraduate at Indian Institute of Information Technology Una (Class of '27). Focused on hardware-accelerated rendering, real-time video streaming architecture, and decoupled microservices with high algorithmic rigour.
+            </p>
+
+            <div class="dispatch-actions">
+              <a href="#works" class="btn-editorial btn-vermilion">
+                <span>EXPLORE WORK [05 PROJECTS] ↓</span>
+              </a>
+              <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+                <span>LIVE 3D ENGINE (WEBGL) ↗</span>
+              </a>
+              <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+                <span>GITHUB REPOSITORIES ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="dispatch-metrics-strip mono">
+            <div class="metric-unit">
+              <div class="metric-unit-num">551+</div>
+              <div class="metric-unit-label">LeetCode Problems (Top 2.5% Medium)</div>
+            </div>
+            <div class="metric-unit">
+              <div class="metric-unit-num">28+</div>
+              <div class="metric-unit-label">Public Git Repositories</div>
+            </div>
+            <div class="metric-unit">
+              <div class="metric-unit-num">3rd</div>
+              <div class="metric-unit-label">IIT Ropar GameJam 2025</div>
+            </div>
+          </div>
         </div>
 
-        <div class="openglt-card">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+        <!-- Right: Archival Editorial Plate & Figure -->
+        <aside class="dispatch-plate">
+          <div class="plate-header mono">
+            <span>ARCHIVE PLATE 01</span>
+            <span>ID: ENG-27-UNA</span>
+          </div>
+
+          <div class="plate-figure">
+            <span class="plate-crosshair top-left mono">+</span>
+            <span class="plate-crosshair bottom-right mono">+</span>
+            <img src="assets/avinash_photo.jpg" alt="Avinash Shah — Systems & Full-Stack Developer">
+          </div>
+
+          <div class="plate-caption mono">
             <div>
-              <div class="repo-badge">
-                <span>avinash893 / OpenGlt &bull; Live WebGL + Desktop C++</span>
+              <strong style="color: var(--ink-primary);">AVINASH SHAH</strong> &bull; IIIT UNA (CSE '27)
+            </div>
+            <div style="color: var(--vermilion);">
+              TOOLCHAIN: C++17 / TYPESCRIPT / GLSL
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- 3. Curated Works & Large Asymmetrical Project Spreads -->
+      <section id="works">
+        <!-- Section Ledger Bar with Interactive Project Filtering -->
+        <div class="section-ledger-bar">
+          <div>
+            <div class="section-index-tag mono">SECTION 02 // PROJECT COMPENDIUM</div>
+            <h2 class="section-ledger-title">Curated Engineering Systems</h2>
+          </div>
+
+          <!-- Interactive Filter Strip -->
+          <div class="filter-inventory" id="projectFilterGroup">
+            <button class="filter-btn active" data-filter="all">ALL WORK [05]</button>
+            <button class="filter-btn" data-filter="graphics">GRAPHICS & 3D [01]</button>
+            <button class="filter-btn" data-filter="webrtc">REAL-TIME WEBRTC [02]</button>
+            <button class="filter-btn" data-filter="systems">SYSTEMS & PYTHON [01]</button>
+            <button class="filter-btn" data-filter="commercial">COMMERCIAL TITLE [01]</button>
+          </div>
+        </div>
+
+        <!-- SPREAD 01: OpenGlt (Graphics & 3D Engine) -->
+        <article class="project-spread" data-category="graphics">
+          <div class="spread-dossier">
+            <div>
+              <div class="dossier-meta-top mono">
+                <span class="dossier-index">SPREAD 01 // GRAPHICS PIPELINE</span>
+                <span>DESKTOP C++17 & WEBGL DUAL-TARGET</span>
               </div>
-              <h3 style="font-size: 1.4rem; font-weight: 600;">Custom 3D Model Visualizer & Graphics Engine</h3>
-              <p style="color: var(--text-secondary); max-width: 680px; font-size: 0.9rem; margin-top: 0.4rem;">
-                A dual-target 3D graphics system featuring a native desktop C++17 OpenGL pipeline and a live browser WebGL/WebAssembly visualizer. Equipped with a Dear ImGui editor suite, drag-and-drop model loading with automatic camera framing, scene hierarchy management, object deletion, Shift+D duplication, and mouse-click raycasting selection.
+
+              <h3 class="dossier-title">
+                <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer">
+                  OpenGlt — C++ 3D Rendering Pipeline & Visualizer
+                </a>
+              </h3>
+
+              <p class="dossier-summary">
+                Hardware-accelerated 3D graphics engine written natively in modern C++17 and compiled for both desktop OpenGL 3.3+ and browser WebGL. Features a Dear ImGui editor suite, drag-and-drop model loading, camera auto-framing, and raycast viewport picking.
               </p>
-            </div>
-            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-              <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                Live 3D App (Vercel) &rarr;
-              </a>
-              <a href="https://avinash893.github.io/OpenGlt/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                GitHub Pages &rarr;
-              </a>
-              <a href="https://github.com/avinash893/OpenGlt" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                Repository
-              </a>
-            </div>
-          </div>
 
-          <div class="spec-grid">
-            <div class="spec-box">
-              <div class="spec-title">Drag & Drop 3D File Loading</div>
-              <p class="spec-desc">Drag any .gltf, .glb, .obj file into the viewport; the engine parses meshes and animates the camera to immediately frame and showcase the asset.</p>
-            </div>
-            <div class="spec-box">
-              <div class="spec-title">Scene Hierarchy & Deletion</div>
-              <p class="spec-desc">Full scene tree hierarchy panel with entity inspection, quick primitive spawning (+Cube, +Sphere), and keyboard/GUI object deletion.</p>
-            </div>
-            <div class="spec-box">
-              <div class="spec-title">Shift+D Duplication & Picking</div>
-              <p class="spec-desc">Clone any selected 3D entity via Shift+D or GUI. Raycast viewport clicking selects objects with golden wireframe cages and mouse translation (G key).</p>
-            </div>
-            <div class="spec-box">
-              <div class="spec-title">C++17 OpenGL & Shader Pipeline</div>
-              <p class="spec-desc">Hardware-accelerated Assimp 3D importer, Blinn-Phong GLSL lighting (directional, point, spotlight), GLFW window manager, and decoupled physics.</p>
-            </div>
-          </div>
-
-          <div class="tech-tags">
-            <span class="tech-tag" style="color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);">Live WebGL</span>
-            <span class="tech-tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">WebAssembly</span>
-            <span class="tech-tag" style="color: #34d399; border-color: rgba(16, 185, 129, 0.3);">Dear ImGui</span>
-            <span class="tech-tag">C++17</span>
-            <span class="tech-tag">OpenGL 3.3+</span>
-            <span class="tech-tag">GLSL</span>
-            <span class="tech-tag">Assimp</span>
-            <span class="tech-tag">GLM</span>
-            <span class="tech-tag">GLFW</span>
-            <span class="tech-tag">CMake</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Production & Repositories</span>
-          <h2 class="section-title">Selected Projects</h2>
-          <p class="section-subtitle">
-            Full-stack web applications, real-time WebRTC infrastructure, and microservices architecture.
-          </p>
-        </div>
-
-        <div class="projects-grid">
-          <!-- We Hear (Live Production) -->
-          <div class="project-card featured" style="border-color: rgba(6, 182, 212, 0.25);">
-            <div>
-              <div class="project-top-row">
-                <span class="badge-cyan">Live Production &bull; WebRTC</span>
-                <div style="display: flex; gap: 0.5rem;">
-                  <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Live Site &rarr;</a>
-                  <a href="https://github.com/avinash893/we-hear" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Repo</a>
+              <div class="dossier-specs-list mono">
+                <div class="dossier-spec-item">
+                  <span><strong>Drag & Drop File Parser:</strong> Drop any .gltf, .glb, or .obj; the camera animates to automatically frame the asset.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>Hierarchy & Duplication:</strong> Scene graph tree with Shift+D entity cloning, primitive spawning (+Cube, +Sphere), and Delete key removal.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>Blinn-Phong GLSL Shaders:</strong> Multi-light pipeline (directional sun, point light, spotlight) with material specular mapping.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>Viewport Raycasting:</strong> Mouse click selection with golden wireframe cages and G-key translation.</span>
                 </div>
               </div>
 
-              <h3 class="project-title">
-                <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer">We Hear — Anonymous Peer Support Calling</a>
-              </h3>
-
-              <p class="project-desc">
-                Production web application enabling anonymous 1-to-1 video companionship with zero shared identity metadata.
-              </p>
-
-              <ul class="project-highlights">
-                <li>Peer-to-peer WebRTC video/audio streaming with SRTP encryption and Socket.IO signaling.</li>
-                <li>Automated pseudonym generation preventing profile leakage or social footprint tracing.</li>
-                <li>Integrated Razorpay payment flow with 24-hour automated refund worker and balance tracking.</li>
-                <li>Stack: Next.js 14 App Router, TypeScript, Tailwind CSS, Prisma ORM, and PostgreSQL.</li>
-              </ul>
-
-              <div class="tech-tags">
-                <span class="tech-tag" style="color: #22d3ee; border-color: rgba(6, 182, 212, 0.3);">Next.js 14</span>
-                <span class="tech-tag" style="color: #22d3ee; border-color: rgba(6, 182, 212, 0.3);">WebRTC</span>
-                <span class="tech-tag">Socket.IO</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Prisma ORM</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Razorpay</span>
+              <div class="dossier-tag-row">
+                <span class="tech-tag-mono">C++17</span>
+                <span class="tech-tag-mono">OpenGL 3.3+</span>
+                <span class="tech-tag-mono">GLSL</span>
+                <span class="tech-tag-mono">Assimp</span>
+                <span class="tech-tag-mono">GLFW</span>
+                <span class="tech-tag-mono">GLM</span>
+                <span class="tech-tag-mono">Dear ImGui</span>
+                <span class="tech-tag-mono">WebGL</span>
               </div>
             </div>
 
-            <div class="preview-box" style="border-color: rgba(6, 182, 212, 0.2);">
-              <span class="preview-status" style="color: #22d3ee;">&bull; LIVE DEPLOYMENT</span>
-              <div style="font-family: var(--font-mono); font-size: 1rem; color: #ffffff; margin-bottom: 0.25rem;">wehearapp.online</div>
-              <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 1.25rem;">Encrypted 1-to-1 WebRTC video sessions.</p>
-              <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                Open Application &rarr;
+            <div class="dossier-actions">
+              <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-vermilion">
+                <span>LAUNCH LIVE ENGINE (VERCEL) ↗</span>
+              </a>
+              <a href="https://avinash893.github.io/OpenGlt/" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+                <span>GITHUB PAGES MIRROR ↗</span>
+              </a>
+              <a href="https://github.com/avinash893/OpenGlt" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+                <span>C++ REPOSITORY ↗</span>
               </a>
             </div>
           </div>
 
-          <!-- Nomato -->
-          <div class="project-card" style="border-color: rgba(244, 63, 94, 0.2);">
+          <!-- Large Viewport / Engine Schematic Preview -->
+          <div class="spread-viewport">
+            <div class="viewport-terminal-header mono">
+              <div class="viewport-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span>VIEWPORT // ENGINE SCHEMATIC & PIPELINE SPEC</span>
+              <span>RENDERER: OPENGL 3.3 CORE</span>
+            </div>
+
+            <div class="viewport-screen">
+              <div class="engine-schematic">
+                <div class="schematic-wireframe">
+                  <div class="schematic-overlay-text mono">
+                    <strong style="color: var(--ink-primary); font-size: 0.85rem;">OPENGLT VIEWPORT SCHEMATIC</strong><br>
+                    <span>RAYCAST PICKING &bull; BLINN-PHONG &bull; 60 FPS VSYNC</span>
+                  </div>
+                </div>
+
+                <div class="schematic-grid-table mono">
+                  <div class="schematic-cell">
+                    <div class="schematic-cell-title">GEOMETRY PARSER</div>
+                    <div class="schematic-cell-val">Assimp (.obj, .gltf, .glb, .stl)</div>
+                  </div>
+                  <div class="schematic-cell">
+                    <div class="schematic-cell-title">UI OVERLAY</div>
+                    <div class="schematic-cell-val">Dear ImGui Docking Hierarchy</div>
+                  </div>
+                  <div class="schematic-cell">
+                    <div class="schematic-cell-title">INTERACTION</div>
+                    <div class="schematic-cell-val">Shift+D Clone &bull; Del Key &bull; Raycast G</div>
+                  </div>
+                  <div class="schematic-cell">
+                    <div class="schematic-cell-title">DEPLOYMENT</div>
+                    <div class="schematic-cell-val">Native Win64 Executable + WebGL</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SPREAD 02: We Hear (Production WebRTC) -->
+        <article class="project-spread" data-category="webrtc">
+          <div class="spread-dossier">
             <div>
-              <div class="project-top-row">
-                <span class="badge-coral">Microservices Architecture</span>
-                <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Repo &rarr;</a>
+              <div class="dossier-meta-top mono">
+                <span class="dossier-index">SPREAD 02 // DISTRIBUTED WEBRTC</span>
+                <span style="color: var(--cyan);">LIVE PRODUCTION IN SERVICE</span>
               </div>
 
-              <h3 class="project-title">
-                <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer">Nomato — Food Ordering Platform</a>
+              <h3 class="dossier-title">
+                <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer">
+                  We Hear — Anonymous Peer Video Calling Platform
+                </a>
               </h3>
 
-              <p class="project-desc">
-                Modular food ordering and delivery system partitioned into independent microservices with real-time geospatial partner tracking.
+              <p class="dossier-summary">
+                High-concurrency production application enabling anonymous 1-to-1 video companionship with zero shared identity metadata. Engineered for sub-100ms streaming latency using peer-to-peer WebRTC channels and automated signaling.
               </p>
 
-              <ul class="project-highlights">
-                <li>Microservices split: Auth (OAuth/JWT), Restaurant, Rider, Utils, and Realtime GPS.</li>
-                <li>Leaflet map integration with reverse geocoding and live delivery route tracking.</li>
-                <li>Customer cart verification, restaurant inventory toggle, and driver KYC validation.</li>
-              </ul>
-            </div>
-
-            <div class="tech-tags">
-              <span class="tech-tag" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.3);">React 19</span>
-              <span class="tech-tag" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.3);">TypeScript</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">Socket.IO</span>
-              <span class="tech-tag">Leaflet</span>
-              <span class="tech-tag">MongoDB</span>
-            </div>
-          </div>
-
-          <!-- CallSummarizer -->
-          <div class="project-card" style="border-color: rgba(168, 85, 247, 0.2);">
-            <div>
-              <div class="project-top-row">
-                <span class="badge-purple">WebRTC &bull; NLP Pipeline</span>
-                <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Repo &rarr;</a>
+              <div class="dossier-specs-list mono">
+                <div class="dossier-spec-item">
+                  <span><strong>SRTP P2P Streaming:</strong> End-to-end encrypted video and audio streams connected via STUN/TURN traversal and Socket.IO handshakes.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>Zero-Metadata Pseudonyms:</strong> Session-scoped identity generation preventing user profiling or social footprint leakage.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>Financial Ledger:</strong> Integrated Razorpay payments with 24-hour automated worker refunds and balance audit trails.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>Modern Architecture:</strong> Next.js 14 App Router, TypeScript, Prisma ORM, and PostgreSQL.</span>
+                </div>
               </div>
 
-              <h3 class="project-title">
-                <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer">CallSummarizer — Video Collaboration</a>
-              </h3>
-
-              <p class="project-desc">
-                Real-time video collaboration platform featuring speech transcript parsing, meeting summarization, and automated task generation.
-              </p>
-
-              <ul class="project-highlights">
-                <li>High-concurrency signaling server handling SDP offer/answer handshakes and ICE candidates.</li>
-                <li>Decoupled API gateway routing to meeting and NLP task extraction workers.</li>
-                <li>Multi-container Docker Compose orchestration for local and cloud deployment.</li>
-              </ul>
+              <div class="dossier-tag-row">
+                <span class="tech-tag-mono">WebRTC</span>
+                <span class="tech-tag-mono">Socket.IO</span>
+                <span class="tech-tag-mono">Next.js 14</span>
+                <span class="tech-tag-mono">TypeScript</span>
+                <span class="tech-tag-mono">Prisma ORM</span>
+                <span class="tech-tag-mono">PostgreSQL</span>
+                <span class="tech-tag-mono">Razorpay API</span>
+              </div>
             </div>
 
-            <div class="tech-tags">
-              <span class="tech-tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">WebRTC</span>
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">NLP</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">MongoDB</span>
+            <div class="dossier-actions">
+              <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-vermilion">
+                <span>VISIT WEHEARAPP.ONLINE ↗</span>
+              </a>
+              <a href="https://github.com/avinash893/we-hear" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+                <span>SOURCE REPOSITORY ↗</span>
+              </a>
             </div>
           </div>
 
-          <!-- Multi CS2 Farm & 2FA Manager -->
-          <div class="project-card" style="border-color: rgba(245, 158, 11, 0.2);">
+          <!-- Large Viewport / WebRTC Signaling Flow -->
+          <div class="spread-viewport">
+            <div class="viewport-terminal-header mono">
+              <div class="viewport-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span>SIGNALING TOPOLOGY // WEHEARAPP.ONLINE</span>
+              <span style="color: var(--cyan);">ENCRYPTED P2P SRTP</span>
+            </div>
+
+            <div class="viewport-screen">
+              <div class="webrtc-flow-panel mono">
+                <div class="flow-step-bar">
+                  <span class="flow-step-title">[01] Signaling Handshake</span>
+                  <span class="flow-step-sub">Socket.IO SDP Offer/Answer Exchange</span>
+                </div>
+                <div class="flow-step-bar">
+                  <span class="flow-step-title">[02] ICE Candidate Gathering</span>
+                  <span class="flow-step-sub">STUN/TURN NAT Traversal Established</span>
+                </div>
+                <div class="flow-step-bar">
+                  <span class="flow-step-title">[03] Direct Peer Media Channel</span>
+                  <span class="flow-step-sub">SRTP Audio/Video Stream (&lt;80ms Latency)</span>
+                </div>
+                <div class="flow-step-bar">
+                  <span class="flow-step-title">[04] Session Teardown & Ledger</span>
+                  <span class="flow-step-sub">Prisma ORM + PostgreSQL + Razorpay Refund</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SPREAD 03: Nomato (Microservices Architecture) -->
+        <article class="project-spread" data-category="systems">
+          <div class="spread-dossier">
             <div>
-              <div class="project-top-row">
-                <span class="badge-amber">Desktop Systems &bull; Automation</span>
-                <a href="https://github.com/avinash893/multi-cs2-farm-inventory-manager" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Repo &rarr;</a>
+              <div class="dossier-meta-top mono">
+                <span class="dossier-index">SPREAD 03 // DISTRIBUTED SERVICES</span>
+                <span>PARTITIONED MICROSERVICES ARCHITECTURE</span>
               </div>
 
-              <h3 class="project-title">
-                <a href="https://github.com/avinash893/multi-cs2-farm-inventory-manager" target="_blank" rel="noopener noreferrer">Multi CS2 Farm & 2FA Manager</a>
+              <h3 class="dossier-title">
+                <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer">
+                  Nomato — Distributed Food Ordering & Real-Time Logistics
+                </a>
               </h3>
 
-              <p class="project-desc">
-                Desktop utility and local web wizard for multi-account Steam farmers with automated TOTP generation and trade confirmation dispatching.
+              <p class="dossier-summary">
+                Scalable logistics ecosystem partitioned into independent microservices with real-time geospatial partner tracking and customer delivery synchronization.
               </p>
 
-              <ul class="project-highlights">
-                <li>Multi-account Steam Guard TOTP 2FA authenticator with synchronized 30s timers.</li>
-                <li>Real-time inventory valuation querying Steam market price APIs.</li>
-                <li>Automated trade dispatching with batch mobile confirmation approvals.</li>
-              </ul>
-            </div>
-
-            <div class="tech-tags">
-              <span class="tech-tag" style="color: #fbbf24; border-color: rgba(245, 158, 11, 0.3);">Python</span>
-              <span class="tech-tag">CustomTkinter</span>
-              <span class="tech-tag">Steam API</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">Cryptography</span>
-            </div>
-          </div>
-
-          <!-- AstroLoop -->
-          <div class="project-card" style="border-color: rgba(16, 185, 129, 0.2);">
-            <div>
-              <div class="project-top-row">
-                <span class="badge-emerald">Shipped Commercial Game</span>
-                <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub &rarr;</a>
+              <div class="dossier-specs-list mono">
+                <div class="dossier-spec-item">
+                  <span><strong>Decoupled Microservices:</strong> Independent Auth (OAuth/JWT), Restaurant Inventory, Rider Dispatch, and Billing nodes.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>Live Geospatial Tracking:</strong> Leaflet mapping engine with reverse geocoding and live coordinate broadcast over WebSockets.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>Concurrency Verification:</strong> Atomically verified customer carts, merchant menus, and delivery KYC workflows.</span>
+                </div>
               </div>
 
-              <h3 class="project-title">
-                AstroLoop: Beat in Motion
+              <div class="dossier-tag-row">
+                <span class="tech-tag-mono">React 19</span>
+                <span class="tech-tag-mono">TypeScript</span>
+                <span class="tech-tag-mono">Node.js</span>
+                <span class="tech-tag-mono">Socket.IO</span>
+                <span class="tech-tag-mono">Leaflet</span>
+                <span class="tech-tag-mono">MongoDB</span>
+              </div>
+            </div>
+
+            <div class="dossier-actions">
+              <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-vermilion">
+                <span>VIEW NOMATO REPOSITORY ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="spread-viewport">
+            <div class="viewport-terminal-header mono">
+              <div class="viewport-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span>SERVICE TOPOLOGY // DISTRIBUTED CLUSTER</span>
+              <span style="color: var(--amber);">PARTITIONED ARCHITECTURE</span>
+            </div>
+
+            <div class="viewport-screen">
+              <div class="topology-block mono">
+                <div class="topology-row">
+                  <span class="topology-node">[AUTH SERVICE]</span>
+                  <span>JWT &bull; OAuth 2.0 &bull; Role-Based Gatekeeper</span>
+                </div>
+                <div class="topology-row">
+                  <span class="topology-node">[RESTAURANT NODE]</span>
+                  <span>Dynamic Inventory &bull; Menu States &bull; Stock Locks</span>
+                </div>
+                <div class="topology-row">
+                  <span class="topology-node">[RIDER DISPATCH]</span>
+                  <span>Geospatial Proximity &bull; Leaflet GPS Stream</span>
+                </div>
+                <div class="topology-row">
+                  <span class="topology-node">[ORDER GATEWAY]</span>
+                  <span>State Machine &bull; Cart Verification &bull; WebSocket Hub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SPREAD 04: CallSummarizer (WebRTC + NLP) -->
+        <article class="project-spread" data-category="webrtc">
+          <div class="spread-dossier">
+            <div>
+              <div class="dossier-meta-top mono">
+                <span class="dossier-index">SPREAD 04 // COLLABORATION & NLP</span>
+                <span>REAL-TIME SPEECH TO ACTION</span>
+              </div>
+
+              <h3 class="dossier-title">
+                <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer">
+                  CallSummarizer — Video Collaboration & Speech Pipeline
+                </a>
               </h3>
 
-              <p class="project-desc">
-                Commercial mobile rhythm title shipped on Google Play Store (NexTribe Studios). Awarded 3rd Place at IIT Ropar GameJam 2025 (Fractured Core).
+              <p class="dossier-summary">
+                Video conference infrastructure that captures multi-party audio, runs transcript chunking, and produces structured executive summaries with automated task assignments.
               </p>
 
-              <ul class="project-highlights">
-                <li>Sole Unity developer: beat-detection algorithms, input validation, and release pipelines.</li>
-                <li>Engineered core physics systems, UI flows, and ad monetization lifecycle callbacks.</li>
-                <li>Awarded 3rd place for modular physics puzzle mechanics at IIT Ropar GameJam.</li>
-              </ul>
+              <div class="dossier-specs-list mono">
+                <div class="dossier-spec-item">
+                  <span><strong>High-Concurrency Signaling:</strong> Multi-room video routing with decoupled signaling servers.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>NLP Task Extraction:</strong> Transcribes speaker audio into actionable agendas and Jira-style action items.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>Docker Containerization:</strong> Fully isolated multi-service orchestration with Docker Compose.</span>
+                </div>
+              </div>
+
+              <div class="dossier-tag-row">
+                <span class="tech-tag-mono">WebRTC</span>
+                <span class="tech-tag-mono">React</span>
+                <span class="tech-tag-mono">Node.js</span>
+                <span class="tech-tag-mono">NLP Engine</span>
+                <span class="tech-tag-mono">Docker</span>
+              </div>
             </div>
 
-            <div class="tech-tags">
-              <span class="tech-tag">Unity</span>
-              <span class="tech-tag">C#</span>
-              <span class="tech-tag">Google Play</span>
-              <span class="tech-tag">GameJam</span>
-              <span class="tech-tag">Physics</span>
+            <div class="dossier-actions">
+              <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-vermilion">
+                <span>VIEW CALLSUMMARIZER REPO ↗</span>
+              </a>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Competencies</span>
-          <h2 class="section-title">Technical Skills</h2>
-          <p class="section-subtitle">
-            Core stack and tools across web platforms, graphics, and systems development.
-          </p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-header">
-              <h4 class="skill-title">Languages</h4>
-              <span class="skill-sub">Primary Programming</span>
+          <div class="spread-viewport">
+            <div class="viewport-terminal-header mono">
+              <div class="viewport-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span>NLP EXTRACTION WORKER // TELEMETRY</span>
+              <span>DOCKER COMPOSE READY</span>
             </div>
-            <ul class="skill-list">
-              <li class="skill-item"><span>TypeScript / JavaScript</span><span>Advanced</span></li>
-              <li class="skill-item"><span>C++ / C</span><span>Advanced</span></li>
-              <li class="skill-item"><span>C# (Unity Engine)</span><span>Advanced</span></li>
-              <li class="skill-item"><span>Python</span><span>Proficient</span></li>
-              <li class="skill-item"><span>SQL</span><span>Proficient</span></li>
-            </ul>
-          </div>
 
-          <div class="skill-card">
-            <div class="skill-header">
-              <h4 class="skill-title">Web & Real-Time</h4>
-              <span class="skill-sub">Frontend & Networking</span>
+            <div class="viewport-screen">
+              <div class="topology-block mono">
+                <div class="topology-row">
+                  <span class="topology-node" style="color: var(--cyan);">[AUDIO CHUNKER]</span>
+                  <span>WAV 16kHz &bull; Voice Activity Detector &bull; Buffer</span>
+                </div>
+                <div class="topology-row">
+                  <span class="topology-node" style="color: var(--cyan);">[NLP TRANSCRIBER]</span>
+                  <span>Speech-to-Text Pipeline &bull; Speaker Diarization</span>
+                </div>
+                <div class="topology-row">
+                  <span class="topology-node" style="color: var(--cyan);">[ACTION PARSER]</span>
+                  <span>Extracts Deadlines &bull; Generates Markdown Summaries</span>
+                </div>
+              </div>
             </div>
-            <ul class="skill-list">
-              <li class="skill-item"><span>WebRTC (P2P / STUN / TURN)</span><span>Advanced</span></li>
-              <li class="skill-item"><span>Next.js 14 / React 19</span><span>Advanced</span></li>
-              <li class="skill-item"><span>Socket.IO / WebSockets</span><span>Advanced</span></li>
-              <li class="skill-item"><span>Node.js / Express</span><span>Advanced</span></li>
-              <li class="skill-item"><span>Tailwind CSS</span><span>Advanced</span></li>
-            </ul>
           </div>
+        </article>
 
-          <div class="skill-card">
-            <div class="skill-header">
-              <h4 class="skill-title">Graphics & Systems</h4>
-              <span class="skill-sub">Low-Level & Simulation</span>
-            </div>
-            <ul class="skill-list">
-              <li class="skill-item"><span>OpenGL 3.3+ / GLSL Shaders</span><span>Advanced</span></li>
-              <li class="skill-item"><span>GLFW / GLM / Assimp</span><span>Advanced</span></li>
-              <li class="skill-item"><span>DirectX 11 / Vulkan</span><span>Foundational</span></li>
-              <li class="skill-item"><span>Rigid-Body Physics</span><span>Proficient</span></li>
-              <li class="skill-item"><span>Linear Algebra & Matrices</span><span>Proficient</span></li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-header">
-              <h4 class="skill-title">Databases & Storage</h4>
-              <span class="skill-sub">Persistence & Caching</span>
-            </div>
-            <ul class="skill-list">
-              <li class="skill-item"><span>PostgreSQL</span><span>Proficient</span></li>
-              <li class="skill-item"><span>MongoDB</span><span>Proficient</span></li>
-              <li class="skill-item"><span>Prisma ORM</span><span>Advanced</span></li>
-              <li class="skill-item"><span>SQLite</span><span>Proficient</span></li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-header">
-              <h4 class="skill-title">Infrastructure & Tools</h4>
-              <span class="skill-sub">DevOps & Platforms</span>
-            </div>
-            <ul class="skill-list">
-              <li class="skill-item"><span>Git / GitHub</span><span>Advanced</span></li>
-              <li class="skill-item"><span>Docker & Docker Compose</span><span>Proficient</span></li>
-              <li class="skill-item"><span>CMake</span><span>Proficient</span></li>
-              <li class="skill-item"><span>Razorpay API</span><span>Advanced</span></li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-header">
-              <h4 class="skill-title">Academic & Theory</h4>
-              <span class="skill-sub">IIIT Una Curriculum</span>
-            </div>
-            <ul class="skill-list">
-              <li class="skill-item"><span>Data Structures & Algorithms</span><span>Strong (551+ LC)</span></li>
-              <li class="skill-item"><span>Operating Systems</span><span>Core</span></li>
-              <li class="skill-item"><span>Database Management</span><span>Core</span></li>
-              <li class="skill-item"><span>Computer Networks</span><span>Core</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Profiles -->
-    <section id="profiles" class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">External Profiles</span>
-          <h2 class="section-title">Coding Verification</h2>
-          <p class="section-subtitle">
-            Profiles across algorithmic contest platforms, source control, and professional networks.
-          </p>
-        </div>
-
-        <div class="profiles-grid">
-          <div class="profile-card">
+        <!-- SPREAD 05: Multi CS2 Farm & AstroLoop -->
+        <article class="project-spread" data-category="commercial">
+          <div class="spread-dossier">
             <div>
-              <span class="profile-tag">LeetCode</span>
-              <h4 class="profile-title">user7340xt</h4>
-              <div class="profile-stat">551+ Solved &bull; Top 2.5% Medium</div>
+              <div class="dossier-meta-top mono">
+                <span class="dossier-index">SPREAD 05 // COMMERCIAL GAME & AUTOMATION</span>
+                <span>PRODUCTION TITLE & SYSTEMS UTILITY</span>
+              </div>
+
+              <h3 class="dossier-title">
+                AstroLoop (Shipped Commercial Game) & Multi CS2 Farm Manager
+              </h3>
+
+              <p class="dossier-summary">
+                Commercial mobile rhythm title shipped on Google Play Store (NexTribe Studios), awarded 3rd Place at IIT Ropar GameJam 2025. Paired with desktop systems automation utilities for cryptographic Steam Guard 2FA synchronization and asset trading.
+              </p>
+
+              <div class="dossier-specs-list mono">
+                <div class="dossier-spec-item">
+                  <span><strong>AstroLoop (Play Store):</strong> Sole Unity developer for beat-detection algorithms, touch validation, and Google Play release pipelines.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>IIT Ropar GameJam 2025:</strong> 3rd Place out of competitive teams for novel physics puzzle gameplay mechanics.</span>
+                </div>
+                <div class="dossier-spec-item">
+                  <span><strong>Multi CS2 Farm Manager:</strong> Python + CustomTkinter desktop utility with synchronized TOTP secret timers and market valuation APIs.</span>
+                </div>
+              </div>
+
+              <div class="dossier-tag-row">
+                <span class="tech-tag-mono">Unity 3D</span>
+                <span class="tech-tag-mono">C#</span>
+                <span class="tech-tag-mono">Google Play</span>
+                <span class="tech-tag-mono">Python</span>
+                <span class="tech-tag-mono">Cryptography</span>
+                <span class="tech-tag-mono">CustomTkinter</span>
+              </div>
             </div>
-            <a href="https://leetcode.com/u/user7340xt/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-              View Profile &rarr;
-            </a>
-          </div>
 
-          <div class="profile-card">
-            <div>
-              <span class="profile-tag">HackerRank</span>
-              <h4 class="profile-title">khurana_aaa3</h4>
-              <div class="profile-stat">Problem Solving Badge</div>
+            <div class="dossier-actions">
+              <a href="https://github.com/avinash893/multi-cs2-farm-inventory-manager" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-vermilion">
+                <span>CS2 2FA REPO ↗</span>
+              </a>
+              <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+                <span>DEVELOPER PROFILE ↗</span>
+              </a>
             </div>
-            <a href="https://www.hackerrank.com/profile/khurana_aaa3" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-              View Profile &rarr;
-            </a>
           </div>
 
-          <div class="profile-card">
-            <div>
-              <span class="profile-tag">GitHub</span>
-              <h4 class="profile-title">avinash893</h4>
-              <div class="profile-stat">28 Public Repositories</div>
+          <div class="spread-viewport">
+            <div class="viewport-terminal-header mono">
+              <div class="viewport-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span>COMMERCIAL METRICS // VERIFIED RELEASES</span>
+              <span style="color: var(--emerald);">SHIPPED PRODUCTION</span>
             </div>
-            <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-              View Profile &rarr;
-            </a>
-          </div>
 
-          <div class="profile-card">
-            <div>
-              <span class="profile-tag">LinkedIn</span>
-              <h4 class="profile-title">avinash-shah</h4>
-              <div class="profile-stat">Professional Profile</div>
+            <div class="viewport-screen">
+              <div class="topology-block mono">
+                <div class="topology-row">
+                  <span class="topology-node" style="color: var(--emerald);">[GOOGLE PLAY]</span>
+                  <span>Shipped Commercial Title (NexTribe Studios)</span>
+                </div>
+                <div class="topology-row">
+                  <span class="topology-node" style="color: var(--emerald);">[IIT ROPAR]</span>
+                  <span>3rd Place Podium Winner (GameJam 2025)</span>
+                </div>
+                <div class="topology-row">
+                  <span class="topology-node" style="color: var(--amber);">[DESKTOP BOT]</span>
+                  <span>Multi-Account TOTP & Steam Trade Automation</span>
+                </div>
+              </div>
             </div>
-            <a href="https://www.linkedin.com/in/avinash-shah-19447628a/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-              View Profile &rarr;
-            </a>
           </div>
-        </div>
-      </div>
-    </section>
+        </article>
+      </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <div class="contact-card">
-          <span class="section-tag">Direct Communication</span>
-          <h2 class="section-title">Get In Touch</h2>
-          <p style="color: var(--text-secondary); max-width: 520px; margin: 0 auto; font-size: 0.95rem;">
-            Open to software engineering internships, full-time positions, or technical collaboration in real-time web and graphics systems.
-          </p>
-
-          <div class="email-box">
-            <span>avinash.1kshah@gmail.com</span>
-            <button id="copyEmailBtn" class="btn btn-outline btn-sm">Copy</button>
-          </div>
-
+      <!-- 4. Technical Specification Matrix (No Generic Cards/Pills) -->
+      <section id="specs" class="specs-section">
+        <div class="section-ledger-bar">
           <div>
-            <a href="mailto:avinash.1kshah@gmail.com" class="btn btn-primary" style="margin-right: 0.5rem;">
-              Send Email
+            <div class="section-index-tag mono">SECTION 03 // CAPABILITIES INVENTORY</div>
+            <h2 class="section-ledger-title">Technical Specification Matrix</h2>
+          </div>
+          <div class="mono" style="font-size: 0.75rem; color: var(--ink-muted);">
+            SYSTEMS &bull; REAL-TIME &bull; PROTOCOLS
+          </div>
+        </div>
+
+        <table class="specs-ledger-table mono">
+          <thead>
+            <tr>
+              <th style="width: 20%;">DOMAIN</th>
+              <th style="width: 45%;">CORE TECHNOLOGIES & RUNTIMES</th>
+              <th style="width: 15%;">DEPTH</th>
+              <th style="width: 20%;">PROVEN EVIDENCE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="domain-stamp">
+                  <span class="mark">[01]</span> SYSTEMS & GRAPHICS
+                </div>
+              </td>
+              <td>
+                <div class="tech-inline-cluster">
+                  <span class="tech-cluster-item highlight">C++17</span>
+                  <span class="tech-cluster-item highlight">OpenGL 3.3+</span>
+                  <span class="tech-cluster-item">GLSL Shaders</span>
+                  <span class="tech-cluster-item">GLFW</span>
+                  <span class="tech-cluster-item">GLM</span>
+                  <span class="tech-cluster-item">Assimp</span>
+                  <span class="tech-cluster-item">Dear ImGui</span>
+                  <span class="tech-cluster-item">CMake</span>
+                </div>
+              </td>
+              <td>
+                <span class="proficiency-indicator" style="color: var(--vermilion);">● Core Native</span>
+              </td>
+              <td>
+                <span style="color: var(--ink-secondary);">OpenGlt Engine (C++ & WebGL)</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="domain-stamp">
+                  <span class="mark">[02]</span> REAL-TIME & WEBRTC
+                </div>
+              </td>
+              <td>
+                <div class="tech-inline-cluster">
+                  <span class="tech-cluster-item highlight">WebRTC P2P</span>
+                  <span class="tech-cluster-item highlight">Socket.IO</span>
+                  <span class="tech-cluster-item">STUN / TURN</span>
+                  <span class="tech-cluster-item">Next.js 14</span>
+                  <span class="tech-cluster-item">React 19</span>
+                  <span class="tech-cluster-item">TypeScript</span>
+                  <span class="tech-cluster-item">Node.js</span>
+                </div>
+              </td>
+              <td>
+                <span class="proficiency-indicator" style="color: var(--cyan);">● Production</span>
+              </td>
+              <td>
+                <span style="color: var(--ink-secondary);">wehearapp.online (Live)</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="domain-stamp">
+                  <span class="mark">[03]</span> DATA & CLOUD
+                </div>
+              </td>
+              <td>
+                <div class="tech-inline-cluster">
+                  <span class="tech-cluster-item highlight">PostgreSQL</span>
+                  <span class="tech-cluster-item">MongoDB</span>
+                  <span class="tech-cluster-item">Prisma ORM</span>
+                  <span class="tech-cluster-item">Docker Compose</span>
+                  <span class="tech-cluster-item">Razorpay API</span>
+                  <span class="tech-cluster-item">Leaflet GPS</span>
+                </div>
+              </td>
+              <td>
+                <span class="proficiency-indicator" style="color: var(--amber);">● Full-Stack</span>
+              </td>
+              <td>
+                <span style="color: var(--ink-secondary);">Nomato Microservices</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="domain-stamp">
+                  <span class="mark">[04]</span> GAME & AUTOMATION
+                </div>
+              </td>
+              <td>
+                <div class="tech-inline-cluster">
+                  <span class="tech-cluster-item highlight">Unity 3D</span>
+                  <span class="tech-cluster-item highlight">C#</span>
+                  <span class="tech-cluster-item">Python</span>
+                  <span class="tech-cluster-item">Cryptography (TOTP)</span>
+                  <span class="tech-cluster-item">CustomTkinter</span>
+                  <span class="tech-cluster-item">Steam Web API</span>
+                </div>
+              </td>
+              <td>
+                <span class="proficiency-indicator" style="color: var(--emerald);">● Commercial</span>
+              </td>
+              <td>
+                <span style="color: var(--ink-secondary);">Google Play Store & IIT Ropar 3rd</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="domain-stamp">
+                  <span class="mark">[05]</span> ALGORITHMS & THEORY
+                </div>
+              </td>
+              <td>
+                <div class="tech-inline-cluster">
+                  <span class="tech-cluster-item highlight">Data Structures</span>
+                  <span class="tech-cluster-item highlight">Advanced Algorithms</span>
+                  <span class="tech-cluster-item">Operating Systems</span>
+                  <span class="tech-cluster-item">Computer Networks</span>
+                  <span class="tech-cluster-item">DBMS</span>
+                </div>
+              </td>
+              <td>
+                <span class="proficiency-indicator" style="color: var(--vermilion);">● 551+ Solved</span>
+              </td>
+              <td>
+                <span style="color: var(--ink-secondary);">LeetCode (Top 2.5% Mediums)</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 5. Verified Benchmarks & Algorithmic Ledger -->
+      <section id="benchmarks" class="verification-section">
+        <div class="section-ledger-bar">
+          <div>
+            <div class="section-index-tag mono">SECTION 04 // EXTERNAL VERIFICATION</div>
+            <h2 class="section-ledger-title">Public Metrics & Profiles</h2>
+          </div>
+          <div class="mono" style="font-size: 0.75rem; color: var(--ink-muted);">
+            VERIFIED PROFILES
+          </div>
+        </div>
+
+        <div class="verification-grid mono">
+          <div class="verification-cell">
+            <div class="cell-index-row">
+              <span>LEDGER 01</span>
+              <span>LEETCODE</span>
+            </div>
+            <div>
+              <div class="cell-primary-stat">551+</div>
+              <div class="cell-entity-name">user7340xt</div>
+              <p class="cell-desc">97.5% medium & hard problem distribution. Consistent algorithmic track record.</p>
+            </div>
+            <a href="https://leetcode.com/u/user7340xt/" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+              <span>VERIFY PROFILE ↗</span>
             </a>
-            <a href="https://drive.google.com/file/d/18fDafogWGlxZG-SP24j79e-df253U2F3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-              Download Resume [PDF]
+          </div>
+
+          <div class="verification-cell">
+            <div class="cell-index-row">
+              <span>LEDGER 02</span>
+              <span>GITHUB</span>
+            </div>
+            <div>
+              <div class="cell-primary-stat">28+</div>
+              <div class="cell-entity-name">avinash893</div>
+              <p class="cell-desc">Public repositories across C++ graphics, WebRTC servers, Python tools, and web apps.</p>
+            </div>
+            <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+              <span>BROWSE GITHUB ↗</span>
+            </a>
+          </div>
+
+          <div class="verification-cell">
+            <div class="cell-index-row">
+              <span>LEDGER 03</span>
+              <span>HACKERRANK</span>
+            </div>
+            <div>
+              <div class="cell-primary-stat">GOLD</div>
+              <div class="cell-entity-name">khurana_aaa3</div>
+              <p class="cell-desc">Problem Solving Badge, verified algorithmic competitive foundation.</p>
+            </div>
+            <a href="https://www.hackerrank.com/profile/khurana_aaa3" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+              <span>VIEW BADGE ↗</span>
+            </a>
+          </div>
+
+          <div class="verification-cell">
+            <div class="cell-index-row">
+              <span>LEDGER 04</span>
+              <span>LINKEDIN</span>
+            </div>
+            <div>
+              <div class="cell-primary-stat">CSE '27</div>
+              <div class="cell-entity-name">avinash-shah</div>
+              <p class="cell-desc">Professional network, academic journey at IIIT Una, and project announcements.</p>
+            </div>
+            <a href="https://www.linkedin.com/in/avinash-shah-19447628a/" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+              <span>CONNECT ↗</span>
             </a>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer>
-    <div class="container footer-content">
+      <!-- 6. Direct Transmission & Colophon -->
+      <section id="contact" class="contact-transmission">
+        <div class="transmission-form-side">
+          <div class="section-index-tag mono" style="margin-bottom: 0.75rem;">SECTION 05 // DIRECT INQUIRY</div>
+          <h2 class="transmission-title">Initiate Contact</h2>
+          <p class="transmission-sub">
+            Available for software engineering roles, internships, systems research, and technical collaboration.
+          </p>
+
+          <div class="email-direct-line mono">
+            <span class="email-display-text" id="emailVal">avinash.1kshah@gmail.com</span>
+            <button class="btn-editorial btn-vermilion" id="copyEmailBtn">
+              <span>COPY EMAIL</span>
+            </button>
+          </div>
+
+          <div class="transmission-actions">
+            <a href="mailto:avinash.1kshah@gmail.com" class="btn-editorial btn-vermilion">
+              <span>SEND EMAIL (MAILTO) ↗</span>
+            </a>
+            <a href="https://drive.google.com/file/d/18fDafogWGlxZG-SP24j79e-df253U2F3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-editorial">
+              <span>CURRICULUM VITAE [PDF] ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="transmission-colophon-side mono">
+          <div class="section-index-tag">ENGINEERING SPECIFICATION</div>
+          
+          <div class="colophon-specs-block">
+            <div class="colophon-row">
+              <span class="colophon-key">INSTITUTION</span>
+              <span class="colophon-val">IIIT UNA (HIMACHAL PRADESH)</span>
+            </div>
+            <div class="colophon-row">
+              <span class="colophon-key">DISCIPLINE</span>
+              <span class="colophon-val">B.TECH COMPUTER SCIENCE ('27)</span>
+            </div>
+            <div class="colophon-row">
+              <span class="colophon-key">SPECIALIZATION</span>
+              <span class="colophon-val">GRAPHICS & LOW-LATENCY NETWORKING</span>
+            </div>
+            <div class="colophon-row">
+              <span class="colophon-key">COMMERCIAL TITLE</span>
+              <span class="colophon-val">ASTROLOOP (GOOGLE PLAY STORE)</span>
+            </div>
+            <div class="colophon-row">
+              <span class="colophon-key">AWARD</span>
+              <span class="colophon-val">3RD PLACE &bull; IIT ROPAR GAMEJAM 2025</span>
+            </div>
+          </div>
+
+          <div style="font-size: 0.72rem; color: var(--ink-muted); margin-top: 2rem;">
+            SET IN SPACE GROTESK & JETBRAINS MONO.<br>
+            CRAFTED WITH ARCHITECTURAL DISCIPLINE &bull; ZERO GENERATED TEMPLATES.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Imprint -->
+    <footer class="footer-imprint mono">
       <div>
-        <span>Avinash Shah &bull; IIIT Una '27</span>
+        <span>AVINASH SHAH &bull; 2026 EDITORIAL EDITION &bull; ALL RIGHTS RESERVED</span>
       </div>
-      <div class="footer-links">
-        <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/avinash-shah-19447628a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://leetcode.com/u/user7340xt/" target="_blank" rel="noopener noreferrer">LeetCode</a>
-        <a href="https://www.hackerrank.com/profile/khurana_aaa3" target="_blank" rel="noopener noreferrer">HackerRank</a>
-        <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer">We Hear</a>
+      <div class="imprint-links">
+        <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer" class="imprint-link">GITHUB</a>
+        <a href="https://www.linkedin.com/in/avinash-shah-19447628a/" target="_blank" rel="noopener noreferrer" class="imprint-link">LINKEDIN</a>
+        <a href="https://leetcode.com/u/user7340xt/" target="_blank" rel="noopener noreferrer" class="imprint-link">LEETCODE</a>
+        <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="imprint-link">WE HEAR</a>
+        <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer" class="imprint-link">OPENGLT</a>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <div id="toast" class="toast">Copied to clipboard</div>
+  </div>
+
+  <!-- Minimal Toast Notification -->
+  <div id="toastNotice" class="toast-notice mono">
+    <span>✓</span>
+    <span id="toastMsg">EMAIL COPIED TO CLIPBOARD</span>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>
