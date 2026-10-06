@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avinash Shah — Systems & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Avinash Shah — IIIT Una '27. Systems programming, WebRTC distributed architecture, and OpenGL graphics.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="logo">
+        <span>avinash.shah</span>
+        <span class="logo-tag">// systems</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">Overview</a></li>
+          <li><a href="#openglt">3D Graphics</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#profiles">Profiles</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://drive.google.com/file/d/18fDafogWGlxZG-SP24j79e-df253U2F3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+          Resume [PDF]
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          Contact
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-badge">
+            <span>IIIT Una '27 &bull; Available for roles</span>
+          </div>
+
+          <h1 class="hero-title">Avinash Shah</h1>
+
+          <div class="hero-role-wrapper">
+            <span>&gt;</span>
+            <span id="typingRole">Full-Stack Web Developer</span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            Computer Science undergraduate building distributed real-time systems, WebRTC video architecture, and C++ OpenGL rendering engines. Focused on low latency, clean design, and reliable performance.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              View Projects &rarr;
+            </a>
+            <a href="https://drive.google.com/file/d/18fDafogWGlxZG-SP24j79e-df253U2F3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              Download Resume
+            </a>
+            <a href="#openglt" class="btn btn-outline">
+              OpenGlt Engine
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer" class="social-pill" style="border-color: rgba(168, 85, 247, 0.3); color: #c084fc;">
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/avinash-shah-19447628a/" target="_blank" rel="noopener noreferrer" class="social-pill" style="border-color: rgba(59, 130, 246, 0.3); color: #60a5fa;">
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://leetcode.com/u/user7340xt/" target="_blank" rel="noopener noreferrer" class="social-pill" style="border-color: rgba(245, 158, 11, 0.3); color: #fbbf24;">
+              <span>LeetCode [551+]</span>
+            </a>
+            <a href="https://www.hackerrank.com/profile/khurana_aaa3" target="_blank" rel="noopener noreferrer" class="social-pill" style="border-color: rgba(16, 185, 129, 0.3); color: #34d399;">
+              <span>HackerRank</span>
+            </a>
+            <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="social-pill" style="border-color: rgba(6, 182, 212, 0.3); color: #22d3ee;">
+              <span>wehearapp.online</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Portrait -->
+        <div class="hero-portrait-card" style="border-color: rgba(59, 130, 246, 0.3);">
+          <div class="portrait-img-box">
+            <img src="assets/avinash_photo.jpg" alt="Avinash Shah">
+          </div>
+          <div class="portrait-meta-footer">
+            <span style="color: #60a5fa;">Avinash Shah</span>
+            <span>IIIT Una &bull; CSE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metrics -->
+      <div class="container">
+        <div class="metrics-strip">
+          <div class="metric-card" style="border-color: rgba(245, 158, 11, 0.2);">
+            <div class="metric-value color-amber">551+</div>
+            <div class="metric-label">LeetCode Solved (97.5% Medium)</div>
+          </div>
+          <div class="metric-card" style="border-color: rgba(168, 85, 247, 0.2);">
+            <div class="metric-value color-purple">28+</div>
+            <div class="metric-label">GitHub Repositories</div>
+          </div>
+          <div class="metric-card" style="border-color: rgba(16, 185, 129, 0.2);">
+            <div class="metric-value color-emerald">3rd</div>
+            <div class="metric-label">IIT Ropar GameJam 2025</div>
+          </div>
+          <div class="metric-card" style="border-color: rgba(59, 130, 246, 0.2);">
+            <div class="metric-value color-blue">1 Title</div>
+            <div class="metric-label">Shipped on Google Play Store</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D Graphics Engine (Authentic OpenGlt Repo) -->
+    <section id="openglt" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Featured Graphics Repository</span>
+          <h2 class="section-title">OpenGlt — C++ 3D Rendering Pipeline</h2>
+          <p class="section-subtitle">
+            Hardware-accelerated 3D graphics application built from scratch in C++ using OpenGL 3.3+, GLFW, GLM, and Assimp.
+          </p>
+        </div>
+
+        <div class="openglt-card">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <div class="repo-badge">
+                <span>avinash893 / OpenGlt</span>
+              </div>
+              <h3 style="font-size: 1.4rem; font-weight: 600;">Custom 3D Model Visualizer & Physics Engine</h3>
+              <p style="color: var(--text-secondary); max-width: 680px; font-size: 0.9rem; margin-top: 0.4rem;">
+                A native desktop renderer capable of importing arbitrary 3D asset hierarchies (GLTF, OBJ), compiling custom GLSL vertex/fragment shader pipelines, and managing dynamic lighting and rigid body bounding physics.
+              </p>
+            </div>
+            <a href="https://github.com/avinash893/OpenGlt" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              View Repository &rarr;
+            </a>
+          </div>
+
+          <div class="spec-grid">
+            <div class="spec-box">
+              <div class="spec-title">Assimp Mesh Importer</div>
+              <p class="spec-desc">Hierarchical scene-graph parsing, vertex buffers, UV texture indexing, and normal map computation.</p>
+            </div>
+            <div class="spec-box">
+              <div class="spec-title">GLSL Shader Pipeline</div>
+              <p class="spec-desc">Blinn-Phong lighting model, directional sunlight, point lights, and dynamic spotlight attenuation.</p>
+            </div>
+            <div class="spec-box">
+              <div class="spec-title">Camera & Window System</div>
+              <p class="spec-desc">GLFW window management, FPS Euler-angle camera controller, mouse pitch/yaw, and keyboard input polling.</p>
+            </div>
+            <div class="spec-box">
+              <div class="spec-title">Rigid-Body Physics</div>
+              <p class="spec-desc">Bounding region calculations, impulse-based sphere collision response, and decoupled simulation loops.</p>
+            </div>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">C++17</span>
+            <span class="tech-tag">OpenGL 3.3+</span>
+            <span class="tech-tag">GLSL</span>
+            <span class="tech-tag">Assimp</span>
+            <span class="tech-tag">GLM</span>
+            <span class="tech-tag">GLFW</span>
+            <span class="tech-tag">CMake</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Production & Repositories</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-subtitle">
+            Full-stack web applications, real-time WebRTC infrastructure, and microservices architecture.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- We Hear (Live Production) -->
+          <div class="project-card featured" style="border-color: rgba(6, 182, 212, 0.25);">
+            <div>
+              <div class="project-top-row">
+                <span class="badge-cyan">Live Production &bull; WebRTC</span>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Live Site &rarr;</a>
+                  <a href="https://github.com/avinash893/we-hear" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Repo</a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer">We Hear — Anonymous Peer Support Calling</a>
+              </h3>
+
+              <p class="project-desc">
+                Production web application enabling anonymous 1-to-1 video companionship with zero shared identity metadata.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Peer-to-peer WebRTC video/audio streaming with SRTP encryption and Socket.IO signaling.</li>
+                <li>Automated pseudonym generation preventing profile leakage or social footprint tracing.</li>
+                <li>Integrated Razorpay payment flow with 24-hour automated refund worker and balance tracking.</li>
+                <li>Stack: Next.js 14 App Router, TypeScript, Tailwind CSS, Prisma ORM, and PostgreSQL.</li>
+              </ul>
+
+              <div class="tech-tags">
+                <span class="tech-tag" style="color: #22d3ee; border-color: rgba(6, 182, 212, 0.3);">Next.js 14</span>
+                <span class="tech-tag" style="color: #22d3ee; border-color: rgba(6, 182, 212, 0.3);">WebRTC</span>
+                <span class="tech-tag">Socket.IO</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Prisma ORM</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Razorpay</span>
+              </div>
+            </div>
+
+            <div class="preview-box" style="border-color: rgba(6, 182, 212, 0.2);">
+              <span class="preview-status" style="color: #22d3ee;">&bull; LIVE DEPLOYMENT</span>
+              <div style="font-family: var(--font-mono); font-size: 1rem; color: #ffffff; margin-bottom: 0.25rem;">wehearapp.online</div>
+              <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 1.25rem;">Encrypted 1-to-1 WebRTC video sessions.</p>
+              <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                Open Application &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Nomato -->
+          <div class="project-card" style="border-color: rgba(244, 63, 94, 0.2);">
+            <div>
+              <div class="project-top-row">
+                <span class="badge-coral">Microservices Architecture</span>
+                <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Repo &rarr;</a>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer">Nomato — Food Ordering Platform</a>
+              </h3>
+
+              <p class="project-desc">
+                Modular food ordering and delivery system partitioned into independent microservices with real-time geospatial partner tracking.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Microservices split: Auth (OAuth/JWT), Restaurant, Rider, Utils, and Realtime GPS.</li>
+                <li>Leaflet map integration with reverse geocoding and live delivery route tracking.</li>
+                <li>Customer cart verification, restaurant inventory toggle, and driver KYC validation.</li>
+              </ul>
+            </div>
+
+            <div class="tech-tags">
+              <span class="tech-tag" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.3);">React 19</span>
+              <span class="tech-tag" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.3);">TypeScript</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Socket.IO</span>
+              <span class="tech-tag">Leaflet</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+          </div>
+
+          <!-- CallSummarizer -->
+          <div class="project-card" style="border-color: rgba(168, 85, 247, 0.2);">
+            <div>
+              <div class="project-top-row">
+                <span class="badge-purple">WebRTC &bull; NLP Pipeline</span>
+                <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Repo &rarr;</a>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer">CallSummarizer — Video Collaboration</a>
+              </h3>
+
+              <p class="project-desc">
+                Real-time video collaboration platform featuring speech transcript parsing, meeting summarization, and automated task generation.
+              </p>
+
+              <ul class="project-highlights">
+                <li>High-concurrency signaling server handling SDP offer/answer handshakes and ICE candidates.</li>
+                <li>Decoupled API gateway routing to meeting and NLP task extraction workers.</li>
+                <li>Multi-container Docker Compose orchestration for local and cloud deployment.</li>
+              </ul>
+            </div>
+
+            <div class="tech-tags">
+              <span class="tech-tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">WebRTC</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+          </div>
+
+          <!-- Multi CS2 Farm & 2FA Manager -->
+          <div class="project-card" style="border-color: rgba(245, 158, 11, 0.2);">
+            <div>
+              <div class="project-top-row">
+                <span class="badge-amber">Desktop Systems &bull; Automation</span>
+                <a href="https://github.com/avinash893/multi-cs2-farm-inventory-manager" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Repo &rarr;</a>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/avinash893/multi-cs2-farm-inventory-manager" target="_blank" rel="noopener noreferrer">Multi CS2 Farm & 2FA Manager</a>
+              </h3>
+
+              <p class="project-desc">
+                Desktop utility and local web wizard for multi-account Steam farmers with automated TOTP generation and trade confirmation dispatching.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Multi-account Steam Guard TOTP 2FA authenticator with synchronized 30s timers.</li>
+                <li>Real-time inventory valuation querying Steam market price APIs.</li>
+                <li>Automated trade dispatching with batch mobile confirmation approvals.</li>
+              </ul>
+            </div>
+
+            <div class="tech-tags">
+              <span class="tech-tag" style="color: #fbbf24; border-color: rgba(245, 158, 11, 0.3);">Python</span>
+              <span class="tech-tag">CustomTkinter</span>
+              <span class="tech-tag">Steam API</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Cryptography</span>
+            </div>
+          </div>
+
+          <!-- AstroLoop -->
+          <div class="project-card" style="border-color: rgba(16, 185, 129, 0.2);">
+            <div>
+              <div class="project-top-row">
+                <span class="badge-emerald">Shipped Commercial Game</span>
+                <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub &rarr;</a>
+              </div>
+
+              <h3 class="project-title">
+                AstroLoop: Beat in Motion
+              </h3>
+
+              <p class="project-desc">
+                Commercial mobile rhythm title shipped on Google Play Store (NexTribe Studios). Awarded 3rd Place at IIT Ropar GameJam 2025 (Fractured Core).
+              </p>
+
+              <ul class="project-highlights">
+                <li>Sole Unity developer: beat-detection algorithms, input validation, and release pipelines.</li>
+                <li>Engineered core physics systems, UI flows, and ad monetization lifecycle callbacks.</li>
+                <li>Awarded 3rd place for modular physics puzzle mechanics at IIT Ropar GameJam.</li>
+              </ul>
+            </div>
+
+            <div class="tech-tags">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Google Play</span>
+              <span class="tech-tag">GameJam</span>
+              <span class="tech-tag">Physics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">
+            Core stack and tools across web platforms, graphics, and systems development.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-header">
+              <h4 class="skill-title">Languages</h4>
+              <span class="skill-sub">Primary Programming</span>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item"><span>TypeScript / JavaScript</span><span>Advanced</span></li>
+              <li class="skill-item"><span>C++ / C</span><span>Advanced</span></li>
+              <li class="skill-item"><span>C# (Unity Engine)</span><span>Advanced</span></li>
+              <li class="skill-item"><span>Python</span><span>Proficient</span></li>
+              <li class="skill-item"><span>SQL</span><span>Proficient</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <h4 class="skill-title">Web & Real-Time</h4>
+              <span class="skill-sub">Frontend & Networking</span>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item"><span>WebRTC (P2P / STUN / TURN)</span><span>Advanced</span></li>
+              <li class="skill-item"><span>Next.js 14 / React 19</span><span>Advanced</span></li>
+              <li class="skill-item"><span>Socket.IO / WebSockets</span><span>Advanced</span></li>
+              <li class="skill-item"><span>Node.js / Express</span><span>Advanced</span></li>
+              <li class="skill-item"><span>Tailwind CSS</span><span>Advanced</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <h4 class="skill-title">Graphics & Systems</h4>
+              <span class="skill-sub">Low-Level & Simulation</span>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item"><span>OpenGL 3.3+ / GLSL Shaders</span><span>Advanced</span></li>
+              <li class="skill-item"><span>GLFW / GLM / Assimp</span><span>Advanced</span></li>
+              <li class="skill-item"><span>DirectX 11 / Vulkan</span><span>Foundational</span></li>
+              <li class="skill-item"><span>Rigid-Body Physics</span><span>Proficient</span></li>
+              <li class="skill-item"><span>Linear Algebra & Matrices</span><span>Proficient</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <h4 class="skill-title">Databases & Storage</h4>
+              <span class="skill-sub">Persistence & Caching</span>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item"><span>PostgreSQL</span><span>Proficient</span></li>
+              <li class="skill-item"><span>MongoDB</span><span>Proficient</span></li>
+              <li class="skill-item"><span>Prisma ORM</span><span>Advanced</span></li>
+              <li class="skill-item"><span>SQLite</span><span>Proficient</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <h4 class="skill-title">Infrastructure & Tools</h4>
+              <span class="skill-sub">DevOps & Platforms</span>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item"><span>Git / GitHub</span><span>Advanced</span></li>
+              <li class="skill-item"><span>Docker & Docker Compose</span><span>Proficient</span></li>
+              <li class="skill-item"><span>CMake</span><span>Proficient</span></li>
+              <li class="skill-item"><span>Razorpay API</span><span>Advanced</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <h4 class="skill-title">Academic & Theory</h4>
+              <span class="skill-sub">IIIT Una Curriculum</span>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item"><span>Data Structures & Algorithms</span><span>Strong (551+ LC)</span></li>
+              <li class="skill-item"><span>Operating Systems</span><span>Core</span></li>
+              <li class="skill-item"><span>Database Management</span><span>Core</span></li>
+              <li class="skill-item"><span>Computer Networks</span><span>Core</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profiles -->
+    <section id="profiles" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">External Profiles</span>
+          <h2 class="section-title">Coding Verification</h2>
+          <p class="section-subtitle">
+            Profiles across algorithmic contest platforms, source control, and professional networks.
+          </p>
+        </div>
+
+        <div class="profiles-grid">
+          <div class="profile-card">
+            <div>
+              <span class="profile-tag">LeetCode</span>
+              <h4 class="profile-title">user7340xt</h4>
+              <div class="profile-stat">551+ Solved &bull; Top 2.5% Medium</div>
+            </div>
+            <a href="https://leetcode.com/u/user7340xt/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              View Profile &rarr;
+            </a>
+          </div>
+
+          <div class="profile-card">
+            <div>
+              <span class="profile-tag">HackerRank</span>
+              <h4 class="profile-title">khurana_aaa3</h4>
+              <div class="profile-stat">Problem Solving Badge</div>
+            </div>
+            <a href="https://www.hackerrank.com/profile/khurana_aaa3" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              View Profile &rarr;
+            </a>
+          </div>
+
+          <div class="profile-card">
+            <div>
+              <span class="profile-tag">GitHub</span>
+              <h4 class="profile-title">avinash893</h4>
+              <div class="profile-stat">28 Public Repositories</div>
+            </div>
+            <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              View Profile &rarr;
+            </a>
+          </div>
+
+          <div class="profile-card">
+            <div>
+              <span class="profile-tag">LinkedIn</span>
+              <h4 class="profile-title">avinash-shah</h4>
+              <div class="profile-stat">Professional Profile</div>
+            </div>
+            <a href="https://www.linkedin.com/in/avinash-shah-19447628a/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              View Profile &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-card">
+          <span class="section-tag">Direct Communication</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p style="color: var(--text-secondary); max-width: 520px; margin: 0 auto; font-size: 0.95rem;">
+            Open to software engineering internships, full-time positions, or technical collaboration in real-time web and graphics systems.
+          </p>
+
+          <div class="email-box">
+            <span>avinash.1kshah@gmail.com</span>
+            <button id="copyEmailBtn" class="btn btn-outline btn-sm">Copy</button>
+          </div>
+
+          <div>
+            <a href="mailto:avinash.1kshah@gmail.com" class="btn btn-primary" style="margin-right: 0.5rem;">
+              Send Email
+            </a>
+            <a href="https://drive.google.com/file/d/18fDafogWGlxZG-SP24j79e-df253U2F3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              Download Resume [PDF]
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <span>Avinash Shah &bull; IIIT Una '27</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/avinash-shah-19447628a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://leetcode.com/u/user7340xt/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+        <a href="https://www.hackerrank.com/profile/khurana_aaa3" target="_blank" rel="noopener noreferrer">HackerRank</a>
+        <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer">We Hear</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast">Copied to clipboard</div>
+  <script src="app.js"></script>
+</body>
+</html>
