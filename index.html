@@ -68,8 +68,11 @@
             <a href="https://drive.google.com/file/d/18fDafogWGlxZG-SP24j79e-df253U2F3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
               Download Resume
             </a>
+            <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Live 3D Engine &rarr;
+            </a>
             <a href="#openglt" class="btn btn-outline">
-              OpenGlt Engine
+              OpenGlt Details
             </a>
           </div>
 
@@ -142,38 +145,49 @@
           <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
             <div>
               <div class="repo-badge">
-                <span>avinash893 / OpenGlt</span>
+                <span>avinash893 / OpenGlt &bull; Live WebGL + Desktop C++</span>
               </div>
-              <h3 style="font-size: 1.4rem; font-weight: 600;">Custom 3D Model Visualizer & Physics Engine</h3>
+              <h3 style="font-size: 1.4rem; font-weight: 600;">Custom 3D Model Visualizer & Graphics Engine</h3>
               <p style="color: var(--text-secondary); max-width: 680px; font-size: 0.9rem; margin-top: 0.4rem;">
-                A native desktop renderer capable of importing arbitrary 3D asset hierarchies (GLTF, OBJ), compiling custom GLSL vertex/fragment shader pipelines, and managing dynamic lighting and rigid body bounding physics.
+                A dual-target 3D graphics system featuring a native desktop C++17 OpenGL pipeline and a live browser WebGL/WebAssembly visualizer. Equipped with a Dear ImGui editor suite, drag-and-drop model loading with automatic camera framing, scene hierarchy management, object deletion, Shift+D duplication, and mouse-click raycasting selection.
               </p>
             </div>
-            <a href="https://github.com/avinash893/OpenGlt" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-              View Repository &rarr;
-            </a>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                Live 3D App (Vercel) &rarr;
+              </a>
+              <a href="https://avinash893.github.io/OpenGlt/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                GitHub Pages &rarr;
+              </a>
+              <a href="https://github.com/avinash893/OpenGlt" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                Repository
+              </a>
+            </div>
           </div>
 
           <div class="spec-grid">
             <div class="spec-box">
-              <div class="spec-title">Assimp Mesh Importer</div>
-              <p class="spec-desc">Hierarchical scene-graph parsing, vertex buffers, UV texture indexing, and normal map computation.</p>
+              <div class="spec-title">Drag & Drop 3D File Loading</div>
+              <p class="spec-desc">Drag any .gltf, .glb, .obj file into the viewport; the engine parses meshes and animates the camera to immediately frame and showcase the asset.</p>
             </div>
             <div class="spec-box">
-              <div class="spec-title">GLSL Shader Pipeline</div>
-              <p class="spec-desc">Blinn-Phong lighting model, directional sunlight, point lights, and dynamic spotlight attenuation.</p>
+              <div class="spec-title">Scene Hierarchy & Deletion</div>
+              <p class="spec-desc">Full scene tree hierarchy panel with entity inspection, quick primitive spawning (+Cube, +Sphere), and keyboard/GUI object deletion.</p>
             </div>
             <div class="spec-box">
-              <div class="spec-title">Camera & Window System</div>
-              <p class="spec-desc">GLFW window management, FPS Euler-angle camera controller, mouse pitch/yaw, and keyboard input polling.</p>
+              <div class="spec-title">Shift+D Duplication & Picking</div>
+              <p class="spec-desc">Clone any selected 3D entity via Shift+D or GUI. Raycast viewport clicking selects objects with golden wireframe cages and mouse translation (G key).</p>
             </div>
             <div class="spec-box">
-              <div class="spec-title">Rigid-Body Physics</div>
-              <p class="spec-desc">Bounding region calculations, impulse-based sphere collision response, and decoupled simulation loops.</p>
+              <div class="spec-title">C++17 OpenGL & Shader Pipeline</div>
+              <p class="spec-desc">Hardware-accelerated Assimp 3D importer, Blinn-Phong GLSL lighting (directional, point, spotlight), GLFW window manager, and decoupled physics.</p>
             </div>
           </div>
 
           <div class="tech-tags">
+            <span class="tech-tag" style="color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);">Live WebGL</span>
+            <span class="tech-tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">WebAssembly</span>
+            <span class="tech-tag" style="color: #34d399; border-color: rgba(16, 185, 129, 0.3);">Dear ImGui</span>
             <span class="tech-tag">C++17</span>
             <span class="tech-tag">OpenGL 3.3+</span>
             <span class="tech-tag">GLSL</span>
