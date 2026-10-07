@@ -148,20 +148,6 @@ img {
   gap: 0.5rem;
 }
 
-.status-dot {
-  width: 7px;
-  height: 7px;
-  background-color: var(--emerald);
-  border-radius: 50%;
-  box-shadow: 0 0 8px var(--emerald);
-  animation: pulseDot 2.4s infinite ease-in-out;
-}
-
-@keyframes pulseDot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.85); }
-}
-
 .masthead-main {
   display: flex;
   justify-content: space-between;
@@ -581,20 +567,6 @@ img {
   justify-content: space-between;
   align-items: center;
   background: var(--canvas);
-}
-
-.viewport-dots {
-  display: flex;
-  gap: 6px;
-}
-
-.viewport-dots span {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--hairline-strong);
-}
-
 .viewport-screen {
   flex: 1;
   padding: var(--gutter);
