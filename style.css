@@ -245,7 +245,7 @@ img {
 
 .hero-dispatch {
   display: grid;
-  grid-template-columns: 1.35fr 1fr;
+  grid-template-columns: 1fr 340px;
   border-bottom: 1px solid var(--hairline);
   position: relative;
 }
@@ -333,14 +333,25 @@ img {
 /* Right Column: Architectural Plate */
 .dispatch-plate {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: var(--canvas-elevated);
+  padding: 2.5rem var(--gutter);
+}
+
+.plate-frame {
+  width: 100%;
+  max-width: 260px;
+  border: 1px solid var(--hairline);
+  background: var(--canvas);
+  display: flex;
+  flex-direction: column;
 }
 
 .plate-header {
-  padding: 0.75rem var(--gutter);
+  padding: 0.6rem 0.85rem;
   border-bottom: 1px solid var(--hairline);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   color: var(--ink-muted);
   display: flex;
   justify-content: space-between;
@@ -348,7 +359,9 @@ img {
 
 .plate-figure {
   position: relative;
-  flex: 1;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  max-height: 320px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -361,12 +374,12 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  filter: contrast(1.08) grayscale(20%);
-  transition: filter 0.4s ease, transform 0.4s ease;
+  filter: contrast(1.05);
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .plate-figure:hover img {
-  filter: contrast(1.1) grayscale(0%);
+  filter: contrast(1.1);
   transform: scale(1.02);
 }
 
@@ -377,18 +390,18 @@ img {
   color: rgba(255, 255, 255, 0.4);
   pointer-events: none;
 }
-.plate-crosshair.top-left { top: 12px; left: 12px; }
-.plate-crosshair.bottom-right { bottom: 12px; right: 12px; }
+.plate-crosshair.top-left { top: 10px; left: 10px; }
+.plate-crosshair.bottom-right { bottom: 10px; right: 10px; }
 
 .plate-caption {
-  padding: 1rem var(--gutter);
+  padding: 0.75rem 0.85rem;
   border-top: 1px solid var(--hairline);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--ink-secondary);
   background: var(--canvas-surface);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 /* ==========================================================================
@@ -988,7 +1001,7 @@ img {
     border-bottom: 1px solid var(--hairline);
   }
   .dispatch-plate {
-    min-height: 420px;
+    padding: 3rem 1.5rem;
   }
   .project-spread {
     grid-template-columns: 1fr;
