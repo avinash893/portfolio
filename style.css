@@ -705,11 +705,51 @@ img {
   border-color: rgba(0, 229, 255, 0.4);
 }
 
+.system-card-header {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.project-logo-box {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border-medium);
+  background: var(--canvas-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.system-card:hover .project-logo-box {
+  transform: translateY(-2px);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 6px 18px rgba(0, 229, 255, 0.25);
+}
+
+.project-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.system-header-meta {
+  flex: 1;
+  min-width: 0;
+}
+
 .system-top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.35rem;
 }
 
 .system-badge {
@@ -725,7 +765,7 @@ img {
   font-size: 1.35rem;
   font-weight: 700;
   line-height: 1.3;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .system-desc {
@@ -1017,6 +1057,15 @@ img {
   }
   .systems-grid {
     grid-template-columns: 1fr;
+  }
+  .system-card-header {
+    gap: 1rem;
+  }
+  .project-logo-box {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 10px;
   }
   .graphics-spec-grid {
     grid-template-columns: 1fr;
