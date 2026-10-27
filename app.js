@@ -1,71 +1,28 @@
 /**
- * AVINASH SHAH — BESPOKE EDITORIAL PORTFOLIO INTERACTIONS
- * Live Clock, Interactive Project Filtering, Minimal Clipboard Toast, & Nav Active State
+ * Avinash Shah — Portfolio Interactions
+ * Email clipboard copy & Scroll spy active navigation
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // --- 1. Live Running IST Clock ---
-  const clockEl = document.getElementById('liveClock');
-  function updateClock() {
-    if (!clockEl) return;
-    const now = new Date();
-    // Indian Standard Time (UTC+05:30)
-    const options = {
-      timeZone: 'Asia/Kolkata',
-      hour12: false,
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit'
-    };
-    const timeString = new Intl.DateTimeFormat('en-GB', options).format(now);
-    clockEl.textContent = `${timeString} IST (UTC+05:30)`;
-  }
-  updateClock();
-  setInterval(updateClock, 1000);
-
-  // --- 2. Interactive Project Filtering ---
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectSpreads = document.querySelectorAll('.project-spread');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // Toggle active button
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.getAttribute('data-filter');
-
-      projectSpreads.forEach(spread => {
-        const category = spread.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
-          spread.classList.remove('hidden');
-        } else {
-          spread.classList.add('hidden');
-        }
-      });
-    });
-  });
-
-  // --- 3. Copy Email to Clipboard ---
+  // 1. Copy Email to Clipboard
   const copyBtn = document.getElementById('copyEmailBtn');
-  const toast = document.getElementById('toastNotice');
-  const toastMsg = document.getElementById('toastMsg');
+  const toast = document.getElementById('toastBox');
   const emailText = 'avinash.1kshah@gmail.com';
 
   function triggerToast(message) {
     if (!toast) return;
-    if (toastMsg) toastMsg.textContent = message;
+    toast.textContent = message;
     toast.classList.add('show');
     setTimeout(() => {
       toast.classList.remove('show');
-    }, 2600);
+    }, 2800);
   }
 
   if (copyBtn) {
     copyBtn.addEventListener('click', () => {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(emailText)
-          .then(() => triggerToast('COPIED: avinash.1kshah@gmail.com'))
+          .then(() => triggerToast('✓ Copied: ' + emailText))
           .catch(() => fallbackCopy(emailText));
       } else {
         fallbackCopy(emailText);
@@ -80,29 +37,29 @@ document.addEventListener('DOMContentLoaded', () => {
     area.select();
     try {
       document.execCommand('copy');
-      triggerToast('COPIED: ' + text);
+      triggerToast('✓ Copied: ' + text);
     } catch (err) {
-      triggerToast('MANUAL COPY: ' + text);
+      triggerToast('Email: ' + text);
     }
     document.body.removeChild(area);
   }
 
-  // --- 4. Section Active Spy on Scroll ---
+  // 2. Active Navigation Spy on Scroll
   const sections = document.querySelectorAll('section[id]');
-  const navAnchors = document.querySelectorAll('.nav-anchor');
+  const navLinks = document.querySelectorAll('.nav-link');
 
   window.addEventListener('scroll', () => {
-    const scrollPos = window.pageYOffset + 180;
+    const scrollPos = window.pageYOffset + 140;
     sections.forEach(sec => {
       const top = sec.offsetTop;
       const height = sec.offsetHeight;
       const id = sec.getAttribute('id');
       if (scrollPos >= top && scrollPos < top + height) {
-        navAnchors.forEach(a => {
-          if (a.getAttribute('href') === `#${id}`) {
-            a.classList.add('active');
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
           } else {
-            a.classList.remove('active');
+            link.classList.remove('active');
           }
         });
       }
