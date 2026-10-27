@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avinash Shah — Systems, Graphics & Game Developer</title>
-  <meta name="description" content="Portfolio of Avinash Shah — IIIT Una '27. Systems programming, Unity game development, C++ OpenGL graphics, and WebRTC real-time platforms.">
+  <meta name="description" content="Portfolio of Avinash Shah — IIIT Una '27. Systems programming, WebRTC real-time platforms, C++ OpenGL graphics, and Unity game development.">
 
   <!-- Typography: Inter, Space Grotesk, and JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,9 +26,9 @@
         </div>
 
         <nav class="nav-menu">
-          <a href="#games" class="nav-link">Games</a>
+          <a href="#systems" class="nav-link">Web & Systems</a>
           <a href="#graphics" class="nav-link">3D Graphics</a>
-          <a href="#systems" class="nav-link">Systems & Web</a>
+          <a href="#games" class="nav-link">Games</a>
           <a href="#skills" class="nav-link">Skills</a>
           <a href="#profiles" class="nav-link">Profiles</a>
           <a href="#contact" class="nav-link">Contact</a>
@@ -54,16 +54,16 @@
           </div>
 
           <h1 class="hero-heading">
-            Engineering <span class="highlight">indie games</span> in Unity, 3D graphics pipelines, and real-time systems.
+            Engineering <span class="highlight">real-time web systems</span>, 3D graphics pipelines, and indie games.
           </h1>
 
           <p class="hero-bio">
-            Computer Science undergraduate at IIIT Una. Focused on playable game development in Unity (C#), low-level 3D graphics engines (C++17 & OpenGL), and high-concurrency WebRTC peer platforms with strong algorithmic fundamentals.
+            Computer Science undergraduate at IIIT Una. Focused on high-concurrency WebRTC peer platforms, distributed microservices, low-level 3D graphics engines (C++17 & OpenGL), and playable indie games in Unity (C#) with strong algorithmic fundamentals.
           </p>
 
           <div class="hero-actions">
-            <a href="#games" class="btn btn-primary">
-              Explore Games ↓
+            <a href="#systems" class="btn btn-primary">
+              Explore Web & Systems ↓
             </a>
             <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
               Live 3D Engine ↗
@@ -75,8 +75,8 @@
 
           <div class="hero-stats-strip">
             <div class="stat-item">
-              <span class="stat-number">4 Titles</span>
-              <span class="stat-label">Shipped Games</span>
+              <span class="stat-number">28+</span>
+              <span class="stat-label">Public Git Repos</span>
             </div>
             <div class="stat-item">
               <span class="stat-number">551+</span>
@@ -87,8 +87,8 @@
               <span class="stat-label">IIT Ropar GameJam</span>
             </div>
             <div class="stat-item">
-              <span class="stat-number">28+</span>
-              <span class="stat-label">Public Git Repos</span>
+              <span class="stat-number">4 Titles</span>
+              <span class="stat-label">Shipped Games</span>
             </div>
           </div>
         </div>
@@ -106,7 +106,297 @@
         </aside>
       </section>
 
-      <!-- 3. Dedicated Section: Games & Interactive Media -->
+      <!-- 3. Dedicated Section: Real-Time & Distributed Systems (Above Game Dev) -->
+      <section id="systems" class="section-wrapper">
+        <div class="section-head">
+          <span class="section-eyebrow">Backend & Networking</span>
+          <h2 class="section-title">Real-Time & Distributed Systems</h2>
+          <p class="section-description">
+            Production web platforms, low-latency WebRTC media streaming, partitioned microservices, and desktop automation tools.
+          </p>
+        </div>
+
+        <div class="systems-grid">
+          <!-- We Hear (Live Production) -->
+          <article class="system-card featured">
+            <div>
+              <div class="system-top-row">
+                <span class="system-badge">Live Production / WebRTC</span>
+                <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Visit Site ↗</a>
+              </div>
+              <h3 class="system-title">
+                <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer">
+                  We Hear — Anonymous Peer Calling
+                </a>
+              </h3>
+              <p class="system-desc">
+                High-concurrency production application enabling anonymous 1-to-1 video companionship with zero shared identity metadata and sub-100ms streaming latency.
+              </p>
+              <div class="system-bullets">
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>End-to-end encrypted SRTP audio/video via STUN/TURN and Socket.IO handshakes</span>
+                </div>
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>Automated pseudonym generation preventing user profiling and metadata leakage</span>
+                </div>
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>Razorpay payment flow with 24-hour automated refund worker and balance audit trails</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="game-tags">
+                <span class="tag-pill">Next.js 14</span>
+                <span class="tag-pill">TypeScript</span>
+                <span class="tag-pill">WebRTC</span>
+                <span class="tag-pill">Socket.IO</span>
+                <span class="tag-pill">Prisma ORM</span>
+                <span class="tag-pill">PostgreSQL</span>
+              </div>
+              <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live App ↗</a>
+                <a href="https://github.com/avinash893/we-hear" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Repo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nomato -->
+          <article class="system-card">
+            <div>
+              <div class="system-top-row">
+                <span class="system-badge" style="color: var(--accent-amber);">Microservices Architecture</span>
+                <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Repo ↗</a>
+              </div>
+              <h3 class="system-title">
+                <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer">
+                  Nomato — Food Ordering Platform
+                </a>
+              </h3>
+              <p class="system-desc">
+                Modular food ordering and logistics platform partitioned into independent microservices with real-time geospatial partner tracking.
+              </p>
+              <div class="system-bullets">
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>Microservices split: Auth (JWT/OAuth), Restaurant Inventory, Rider Dispatch, and Billing</span>
+                </div>
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>Leaflet map integration with reverse geocoding and live delivery route tracking</span>
+                </div>
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>Atomic customer cart verification, menu state toggling, and driver KYC workflows</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="game-tags">
+                <span class="tag-pill">React 19</span>
+                <span class="tag-pill">TypeScript</span>
+                <span class="tag-pill">Node.js</span>
+                <span class="tag-pill">Socket.IO</span>
+                <span class="tag-pill">Leaflet</span>
+                <span class="tag-pill">MongoDB</span>
+              </div>
+              <div style="margin-top: 1rem;">
+                <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CallSummarizer -->
+          <article class="system-card">
+            <div>
+              <div class="system-top-row">
+                <span class="system-badge" style="color: var(--accent-vermilion);">WebRTC / NLP Pipeline</span>
+                <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Repo ↗</a>
+              </div>
+              <h3 class="system-title">
+                <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer">
+                  CallSummarizer — Video Collaboration
+                </a>
+              </h3>
+              <p class="system-desc">
+                Video conference platform capturing multi-party audio, running transcript chunking, and producing structured executive summaries with automated task assignments.
+              </p>
+              <div class="system-bullets">
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>High-concurrency signaling server handling multi-room SDP offer/answer handshakes</span>
+                </div>
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>NLP audio transcription chunking speech into actionable agendas and action items</span>
+                </div>
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>Multi-container Docker Compose orchestration for local and cloud environments</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="game-tags">
+                <span class="tag-pill">WebRTC</span>
+                <span class="tag-pill">React</span>
+                <span class="tag-pill">Node.js</span>
+                <span class="tag-pill">NLP</span>
+                <span class="tag-pill">Docker</span>
+              </div>
+              <div style="margin-top: 1rem;">
+                <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Multi CS2 Farm & 2FA Manager -->
+          <article class="system-card">
+            <div>
+              <div class="system-top-row">
+                <span class="system-badge" style="color: var(--accent-emerald);">Desktop Systems & Automation</span>
+                <a href="https://github.com/avinash893/multi-cs2-farm-inventory-manager" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Repo ↗</a>
+              </div>
+              <h3 class="system-title">
+                <a href="https://github.com/avinash893/multi-cs2-farm-inventory-manager" target="_blank" rel="noopener noreferrer">
+                  Multi CS2 Farm & 2FA Manager
+                </a>
+              </h3>
+              <p class="system-desc">
+                Desktop utility and local web wizard for multi-account Steam users with automated TOTP generation, trade dispatching, and market price valuation.
+              </p>
+              <div class="system-bullets">
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>Multi-account Steam Guard TOTP 2FA authenticator with synchronized 30s timers</span>
+                </div>
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>Real-time inventory valuation querying Steam market price APIs with local caching</span>
+                </div>
+                <div class="system-bullet-item">
+                  <span class="arrow">→</span>
+                  <span>Automated trade dispatching with batch mobile confirmation approvals</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="game-tags">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">CustomTkinter</span>
+                <span class="tag-pill">Steam API</span>
+                <span class="tag-pill">Cryptography</span>
+              </div>
+              <div style="margin-top: 1rem;">
+                <a href="https://github.com/avinash893/multi-cs2-farm-inventory-manager" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Repository ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. Dedicated Section: 3D Graphics & Simulation Pipeline -->
+      <section id="graphics" class="section-wrapper">
+        <div class="section-head">
+          <span class="section-eyebrow">Hardware-Accelerated Systems</span>
+          <h2 class="section-title">OpenGlt — Custom 3D Graphics Engine</h2>
+          <p class="section-description">
+            Hardware-accelerated 3D model visualizer and rendering pipeline built in modern C++17 with OpenGL 3.3+, compiled for both native Windows and the web via WebGL.
+          </p>
+        </div>
+
+        <div class="graphics-feature-box">
+          <div class="graphics-details">
+            <div>
+              <span class="graphics-header-tag">Live WebGL & Native Desktop C++17</span>
+              <h3 class="graphics-title">
+                Hardware 3D Visualizer & Scene Editor
+              </h3>
+              <p class="graphics-summary">
+                A dual-target 3D graphics system equipped with a Dear ImGui editor suite, drag-and-drop 3D asset ingestion, camera auto-focus framing, scene hierarchy management, object duplication (Shift+D), and mouse-click raycasting selection with transform gizmos.
+              </p>
+
+              <div class="graphics-spec-grid">
+                <div class="spec-block">
+                  <div class="spec-title">Drag & Drop 3D Loading</div>
+                  <div class="spec-desc">Drop any .gltf, .glb, or .obj file; the engine parses meshes and animates the camera to immediately frame the model.</div>
+                </div>
+                <div class="spec-block">
+                  <div class="spec-title">Scene Graph & Hierarchy</div>
+                  <div class="spec-desc">Full scene tree hierarchy with entity inspection, primitive spawning (+Cube, +Sphere), and Delete key removal.</div>
+                </div>
+                <div class="spec-block">
+                  <div class="spec-title">Shift+D Clone & Picking</div>
+                  <div class="spec-desc">Clone any selected entity via Shift+D. Viewport raycasting selects objects with golden wireframe cages and translation gizmos.</div>
+                </div>
+                <div class="spec-block">
+                  <div class="spec-title">Blinn-Phong Lighting</div>
+                  <div class="spec-desc">Multi-light GLSL shader pipeline supporting directional sun, point lights, and spotlights with specular gloss maps.</div>
+                </div>
+              </div>
+
+              <div class="game-tags">
+                <span class="tag-pill">C++17</span>
+                <span class="tag-pill">OpenGL 3.3+</span>
+                <span class="tag-pill">GLSL</span>
+                <span class="tag-pill">Assimp</span>
+                <span class="tag-pill">GLFW</span>
+                <span class="tag-pill">GLM</span>
+                <span class="tag-pill">Dear ImGui</span>
+                <span class="tag-pill">WebGL / WASM</span>
+              </div>
+            </div>
+
+            <div class="graphics-actions">
+              <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Launch Live App (Vercel) ↗
+              </a>
+              <a href="https://avinash893.github.io/OpenGlt/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                GitHub Pages Demo ↗
+              </a>
+              <a href="https://github.com/avinash893/OpenGlt" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                C++ Repository ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="graphics-preview-side">
+            <div class="schematic-box">
+              <div class="schematic-banner">
+                OPENGLT ENGINE ARCHITECTURE
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-key">GEOMETRY LOADER</span>
+                <span class="schematic-val">Assimp (.obj, .gltf, .glb, .stl)</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-key">SHADING MODEL</span>
+                <span class="schematic-val">Blinn-Phong GLSL Multi-Light</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-key">UI DOCKING</span>
+                <span class="schematic-val">Dear ImGui (Hierarchy & Inspector)</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-key">INTERACTION</span>
+                <span class="schematic-val">Raycast Picking / Shift+D / Del</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-key">TARGET RUNTIMES</span>
+                <span class="schematic-val">Native Win64 Executable + WebGL</span>
+              </div>
+              <div class="schematic-row">
+                <span class="schematic-key">PERFORMANCE</span>
+                <span class="schematic-val">60 FPS Hardware VSync</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Dedicated Section: Games & Interactive Media -->
       <section id="games" class="section-wrapper">
         <div class="section-head">
           <span class="section-eyebrow">Interactive Portfolio</span>
@@ -299,296 +589,6 @@
         </div>
       </section>
 
-      <!-- 4. Dedicated Section: 3D Graphics & Simulation Pipeline -->
-      <section id="graphics" class="section-wrapper">
-        <div class="section-head">
-          <span class="section-eyebrow">Hardware-Accelerated Systems</span>
-          <h2 class="section-title">OpenGlt — Custom 3D Graphics Engine</h2>
-          <p class="section-description">
-            Hardware-accelerated 3D model visualizer and rendering pipeline built in modern C++17 with OpenGL 3.3+, compiled for both native Windows and the web via WebGL.
-          </p>
-        </div>
-
-        <div class="graphics-feature-box">
-          <div class="graphics-details">
-            <div>
-              <span class="graphics-header-tag">Live WebGL & Native Desktop C++17</span>
-              <h3 class="graphics-title">
-                Hardware 3D Visualizer & Scene Editor
-              </h3>
-              <p class="graphics-summary">
-                A dual-target 3D graphics system equipped with a Dear ImGui editor suite, drag-and-drop 3D asset ingestion, camera auto-focus framing, scene hierarchy management, object duplication (Shift+D), and mouse-click raycasting selection with transform gizmos.
-              </p>
-
-              <div class="graphics-spec-grid">
-                <div class="spec-block">
-                  <div class="spec-title">Drag & Drop 3D Loading</div>
-                  <div class="spec-desc">Drop any .gltf, .glb, or .obj file; the engine parses meshes and animates the camera to immediately frame the model.</div>
-                </div>
-                <div class="spec-block">
-                  <div class="spec-title">Scene Graph & Hierarchy</div>
-                  <div class="spec-desc">Full scene tree hierarchy with entity inspection, primitive spawning (+Cube, +Sphere), and Delete key removal.</div>
-                </div>
-                <div class="spec-block">
-                  <div class="spec-title">Shift+D Clone & Picking</div>
-                  <div class="spec-desc">Clone any selected entity via Shift+D. Viewport raycasting selects objects with golden wireframe cages and translation gizmos.</div>
-                </div>
-                <div class="spec-block">
-                  <div class="spec-title">Blinn-Phong Lighting</div>
-                  <div class="spec-desc">Multi-light GLSL shader pipeline supporting directional sun, point lights, and spotlights with specular gloss maps.</div>
-                </div>
-              </div>
-
-              <div class="game-tags">
-                <span class="tag-pill">C++17</span>
-                <span class="tag-pill">OpenGL 3.3+</span>
-                <span class="tag-pill">GLSL</span>
-                <span class="tag-pill">Assimp</span>
-                <span class="tag-pill">GLFW</span>
-                <span class="tag-pill">GLM</span>
-                <span class="tag-pill">Dear ImGui</span>
-                <span class="tag-pill">WebGL / WASM</span>
-              </div>
-            </div>
-
-            <div class="graphics-actions">
-              <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                Launch Live App (Vercel) ↗
-              </a>
-              <a href="https://avinash893.github.io/OpenGlt/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                GitHub Pages Demo ↗
-              </a>
-              <a href="https://github.com/avinash893/OpenGlt" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                C++ Repository ↗
-              </a>
-            </div>
-          </div>
-
-          <div class="graphics-preview-side">
-            <div class="schematic-box">
-              <div class="schematic-banner">
-                OPENGLT ENGINE ARCHITECTURE
-              </div>
-              <div class="schematic-row">
-                <span class="schematic-key">GEOMETRY LOADER</span>
-                <span class="schematic-val">Assimp (.obj, .gltf, .glb, .stl)</span>
-              </div>
-              <div class="schematic-row">
-                <span class="schematic-key">SHADING MODEL</span>
-                <span class="schematic-val">Blinn-Phong GLSL Multi-Light</span>
-              </div>
-              <div class="schematic-row">
-                <span class="schematic-key">UI DOCKING</span>
-                <span class="schematic-val">Dear ImGui (Hierarchy & Inspector)</span>
-              </div>
-              <div class="schematic-row">
-                <span class="schematic-key">INTERACTION</span>
-                <span class="schematic-val">Raycast Picking / Shift+D / Del</span>
-              </div>
-              <div class="schematic-row">
-                <span class="schematic-key">TARGET RUNTIMES</span>
-                <span class="schematic-val">Native Win64 Executable + WebGL</span>
-              </div>
-              <div class="schematic-row">
-                <span class="schematic-key">PERFORMANCE</span>
-                <span class="schematic-val">60 FPS Hardware VSync</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. Dedicated Section: Real-Time & Distributed Systems -->
-      <section id="systems" class="section-wrapper">
-        <div class="section-head">
-          <span class="section-eyebrow">Backend & Networking</span>
-          <h2 class="section-title">Real-Time & Distributed Systems</h2>
-          <p class="section-description">
-            Production web platforms, low-latency WebRTC media streaming, partitioned microservices, and desktop automation tools.
-          </p>
-        </div>
-
-        <div class="systems-grid">
-          <!-- We Hear (Live Production) -->
-          <article class="system-card featured">
-            <div>
-              <div class="system-top-row">
-                <span class="system-badge">Live Production / WebRTC</span>
-                <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Visit Site ↗</a>
-              </div>
-              <h3 class="system-title">
-                <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer">
-                  We Hear — Anonymous Peer Calling
-                </a>
-              </h3>
-              <p class="system-desc">
-                High-concurrency production application enabling anonymous 1-to-1 video companionship with zero shared identity metadata and sub-100ms streaming latency.
-              </p>
-              <div class="system-bullets">
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>End-to-end encrypted SRTP audio/video via STUN/TURN and Socket.IO handshakes</span>
-                </div>
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>Automated pseudonym generation preventing user profiling and metadata leakage</span>
-                </div>
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>Razorpay payment flow with 24-hour automated refund worker and balance audit trails</span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="game-tags">
-                <span class="tag-pill">Next.js 14</span>
-                <span class="tag-pill">TypeScript</span>
-                <span class="tag-pill">WebRTC</span>
-                <span class="tag-pill">Socket.IO</span>
-                <span class="tag-pill">Prisma ORM</span>
-                <span class="tag-pill">PostgreSQL</span>
-              </div>
-              <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
-                <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live App ↗</a>
-                <a href="https://github.com/avinash893/we-hear" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Repo ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Nomato -->
-          <article class="system-card">
-            <div>
-              <div class="system-top-row">
-                <span class="system-badge" style="color: var(--accent-amber);">Microservices Architecture</span>
-                <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Repo ↗</a>
-              </div>
-              <h3 class="system-title">
-                <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer">
-                  Nomato — Food Ordering Platform
-                </a>
-              </h3>
-              <p class="system-desc">
-                Modular food ordering and logistics platform partitioned into independent microservices with real-time geospatial partner tracking.
-              </p>
-              <div class="system-bullets">
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>Microservices split: Auth (JWT/OAuth), Restaurant Inventory, Rider Dispatch, and Billing</span>
-                </div>
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>Leaflet map integration with reverse geocoding and live delivery route tracking</span>
-                </div>
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>Atomic customer cart verification, menu state toggling, and driver KYC workflows</span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="game-tags">
-                <span class="tag-pill">React 19</span>
-                <span class="tag-pill">TypeScript</span>
-                <span class="tag-pill">Node.js</span>
-                <span class="tag-pill">Socket.IO</span>
-                <span class="tag-pill">Leaflet</span>
-                <span class="tag-pill">MongoDB</span>
-              </div>
-              <div style="margin-top: 1rem;">
-                <a href="https://github.com/avinash893/nomato" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Repository ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- CallSummarizer -->
-          <article class="system-card">
-            <div>
-              <div class="system-top-row">
-                <span class="system-badge" style="color: var(--accent-vermilion);">WebRTC / NLP Pipeline</span>
-                <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Repo ↗</a>
-              </div>
-              <h3 class="system-title">
-                <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer">
-                  CallSummarizer — Video Collaboration
-                </a>
-              </h3>
-              <p class="system-desc">
-                Video conference platform capturing multi-party audio, running transcript chunking, and producing structured executive summaries with automated task assignments.
-              </p>
-              <div class="system-bullets">
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>High-concurrency signaling server handling multi-room SDP offer/answer handshakes</span>
-                </div>
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>NLP audio transcription chunking speech into actionable agendas and action items</span>
-                </div>
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>Multi-container Docker Compose orchestration for local and cloud environments</span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="game-tags">
-                <span class="tag-pill">WebRTC</span>
-                <span class="tag-pill">React</span>
-                <span class="tag-pill">Node.js</span>
-                <span class="tag-pill">NLP</span>
-                <span class="tag-pill">Docker</span>
-              </div>
-              <div style="margin-top: 1rem;">
-                <a href="https://github.com/avinash893/CallSummarizer" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Repository ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Multi CS2 Farm & 2FA Manager -->
-          <article class="system-card">
-            <div>
-              <div class="system-top-row">
-                <span class="system-badge" style="color: var(--accent-emerald);">Desktop Systems & Automation</span>
-                <a href="https://github.com/avinash893/multi-cs2-farm-inventory-manager" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Repo ↗</a>
-              </div>
-              <h3 class="system-title">
-                <a href="https://github.com/avinash893/multi-cs2-farm-inventory-manager" target="_blank" rel="noopener noreferrer">
-                  Multi CS2 Farm & 2FA Manager
-                </a>
-              </h3>
-              <p class="system-desc">
-                Desktop utility and local web wizard for multi-account Steam users with automated TOTP generation, trade dispatching, and market price valuation.
-              </p>
-              <div class="system-bullets">
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>Multi-account Steam Guard TOTP 2FA authenticator with synchronized 30s timers</span>
-                </div>
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>Real-time inventory valuation querying Steam market price APIs with local caching</span>
-                </div>
-                <div class="system-bullet-item">
-                  <span class="arrow">→</span>
-                  <span>Automated trade dispatching with batch mobile confirmation approvals</span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="game-tags">
-                <span class="tag-pill">Python</span>
-                <span class="tag-pill">CustomTkinter</span>
-                <span class="tag-pill">Steam API</span>
-                <span class="tag-pill">Cryptography</span>
-              </div>
-              <div style="margin-top: 1rem;">
-                <a href="https://github.com/avinash893/multi-cs2-farm-inventory-manager" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Repository ↗</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
       <!-- 6. Dedicated Section: Technical Skills Matrix -->
       <section id="skills" class="section-wrapper">
         <div class="section-head">
@@ -611,21 +611,20 @@
             <tbody>
               <tr>
                 <td>
-                  <div class="skill-domain-title">Game Development</div>
+                  <div class="skill-domain-title">Real-Time Web & APIs</div>
                 </td>
                 <td>
                   <div class="skill-pills-wrap">
-                    <span class="skill-item-badge bold">Unity 3D / 2D</span>
-                    <span class="skill-item-badge bold">C#</span>
-                    <span class="skill-item-badge">WebGL Export</span>
-                    <span class="skill-item-badge">NavMesh AI</span>
-                    <span class="skill-item-badge">Physics Simulation</span>
-                    <span class="skill-item-badge">Google Play Services</span>
-                    <span class="skill-item-badge">Itch.io Deployment</span>
+                    <span class="skill-item-badge bold">WebRTC (P2P / STUN / TURN)</span>
+                    <span class="skill-item-badge bold">Next.js 14 / React 19</span>
+                    <span class="skill-item-badge bold">TypeScript</span>
+                    <span class="skill-item-badge">Socket.IO / WebSockets</span>
+                    <span class="skill-item-badge">Node.js / Express</span>
+                    <span class="skill-item-badge">Tailwind CSS</span>
                   </div>
                 </td>
                 <td>
-                  <span class="skill-level-text" style="color: var(--accent-vermilion);">Advanced (4 Shipped)</span>
+                  <span class="skill-level-text" style="color: var(--accent-vermilion);">Advanced (Production)</span>
                 </td>
               </tr>
 
@@ -651,20 +650,21 @@
 
               <tr>
                 <td>
-                  <div class="skill-domain-title">Real-Time Web & APIs</div>
+                  <div class="skill-domain-title">Game Development</div>
                 </td>
                 <td>
                   <div class="skill-pills-wrap">
-                    <span class="skill-item-badge bold">WebRTC (P2P / STUN / TURN)</span>
-                    <span class="skill-item-badge bold">Next.js 14 / React 19</span>
-                    <span class="skill-item-badge bold">TypeScript</span>
-                    <span class="skill-item-badge">Socket.IO / WebSockets</span>
-                    <span class="skill-item-badge">Node.js / Express</span>
-                    <span class="skill-item-badge">Tailwind CSS</span>
+                    <span class="skill-item-badge bold">Unity 3D / 2D</span>
+                    <span class="skill-item-badge bold">C#</span>
+                    <span class="skill-item-badge">WebGL Export</span>
+                    <span class="skill-item-badge">NavMesh AI</span>
+                    <span class="skill-item-badge">Physics Simulation</span>
+                    <span class="skill-item-badge">Google Play Services</span>
+                    <span class="skill-item-badge">Itch.io Deployment</span>
                   </div>
                 </td>
                 <td>
-                  <span class="skill-level-text" style="color: var(--accent-vermilion);">Advanced (Production)</span>
+                  <span class="skill-level-text" style="color: var(--accent-vermilion);">Advanced (4 Shipped)</span>
                 </td>
               </tr>
 
@@ -783,7 +783,7 @@
           <span class="section-eyebrow">Get In Touch</span>
           <h2 class="contact-heading">Let's Build Together</h2>
           <p class="contact-sub">
-            Available for game engineering roles, 3D graphics positions, systems research, and software engineering internships.
+            Available for software engineering internships, WebRTC systems architecture, 3D graphics, and game engineering roles.
           </p>
 
           <div class="contact-email-bar">
@@ -811,12 +811,12 @@
         <span>Avinash Shah / IIIT Una '27 / All Rights Reserved</span>
       </div>
       <div class="footer-nav">
-        <a href="https://avinash-shah.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io</a>
         <a href="https://github.com/avinash893" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/avinash-shah-19447628a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://leetcode.com/u/user7340xt/" target="_blank" rel="noopener noreferrer">LeetCode</a>
         <a href="https://wehearapp.online/" target="_blank" rel="noopener noreferrer">We Hear</a>
         <a href="https://openglt-3d-visualizer.vercel.app" target="_blank" rel="noopener noreferrer">OpenGlt</a>
+        <a href="https://avinash-shah.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io</a>
+        <a href="https://www.linkedin.com/in/avinash-shah-19447628a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://leetcode.com/u/user7340xt/" target="_blank" rel="noopener noreferrer">LeetCode</a>
       </div>
     </footer>
 
